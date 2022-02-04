@@ -1,0 +1,1181 @@
+,user
+0,"b'[{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45824"",""repository_url"":""https://api.github.com/repos/pandas-dev/'"
+1,"b'pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45824/labels{/name}"",""comments_url"":""https://api.git'"
+2,"b'hub.com/repos/pandas-dev/pandas/issues/45824/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45824'"
+3,"b'/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45824"",""id"":1124378874,""node_id"":""I_kwDOAA0YD85DBKj6"",""number"":'"
+4,"b'45824,""title"":""BUG: concat doesn\'t preserve attrs"",""user"":{""login"":""MarcoGorelli"",""id"":33491632,""node_id"":""MDQ6VXNlcjMzNDkxNjMy""'"
+5,"b',""avatar_url"":""https://avatars.githubusercontent.com/u/33491632?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/MarcoG'"
+6,"b'orelli"",""html_url"":""https://github.com/MarcoGorelli"",""followers_url"":""https://api.github.com/users/MarcoGorelli/followers"",""foll'"
+7,"b'owing_url"":""https://api.github.com/users/MarcoGorelli/following{/other_user}"",""gists_url"":""https://api.github.com/users/MarcoGor'"
+8,"b'elli/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/MarcoGorelli/starred{/owner}{/repo}"",""subscriptions_url"":""http'"
+9,"b's://api.github.com/users/MarcoGorelli/subscriptions"",""organizations_url"":""https://api.github.com/users/MarcoGorelli/orgs"",""repos'"
+10,"b'_url"":""https://api.github.com/users/MarcoGorelli/repos"",""events_url"":""https://api.github.com/users/MarcoGorelli/events{/privacy}'"
+11,"b'"",""received_events_url"":""https://api.github.com/users/MarcoGorelli/received_events"",""type"":""User"",""site_admin"":false},""labels"":['"
+12,"b'{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""col'"
+13,"b'or"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github'"
+14,"b'.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue '"
+15,"b'that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":n'"
+16,"b'ull,""comments"":1,""created_at"":""2022-02-04T16:19:23Z"",""updated_at"":""2022-02-04T16:41:33Z"",""closed_at"":null,""author_association"":""'"
+17,"b'MEMBER"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been'"
+18,b' reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html)'
+19,b' of pandas.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\n'
+20,"b'import pandas\\r\\ndf1 = pandas.DataFrame({\\""a\\"": [1]})\\r\\ndf2 = pandas.DataFrame({\\""a\\"": [2]})\\r\\ndf1.attrs[\\""metadata-xy\\""] = 42'"
+21,"b'\\r\\n\\r\\nprint(df1.append(df2).attrs)  # keeps the attrs of df1\\r\\nprint(pandas.concat([df1, df2]).attrs)  # no attrs in result\\n'"
+22,"b""```\\n\\n\\n### Issue Description\\n\\n`append` preserves attrs, but `concat` doesn't\\r\\n\\r\\nOriginally reported here https://github."""
+23,b'com/pandas-dev/pandas/issues/35407#issuecomment-1022107661\\n\\n### Expected Behavior\\n\\n`df1.append(df2).attrs` and `pandas.conca'
+24,"b't([df1, df2]).attrs` should probably match\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nReplace this line with the output of pd'"
+25,"b'.show_versions()\\r\\n\\r\\n</details>\\r\\n "",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45824/reactio'"
+26,"b'ns"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.g'"
+27,"b'ithub.com/repos/pandas-dev/pandas/issues/45824/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/p'"
+28,"b'andas-dev/pandas/issues/45822"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.githu'"
+29,"b'b.com/repos/pandas-dev/pandas/issues/45822/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/'"
+30,"b'45822/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45822/events"",""html_url"":""https://github.com'"
+31,"b'/pandas-dev/pandas/pull/45822"",""id"":1124295550,""node_id"":""PR_kwDOAA0YD84yFoyK"",""number"":45822,""title"":""Test case for concat inco'"
+32,"b'nsistent multiIndex"",""user"":{""login"":""weikhor"",""id"":36619387,""node_id"":""MDQ6VXNlcjM2NjE5Mzg3"",""avatar_url"":""https://avatars.gith'"
+33,"b'ubusercontent.com/u/36619387?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/weikhor"",""html_url"":""https://github.com/w'"
+34,"b'eikhor"",""followers_url"":""https://api.github.com/users/weikhor/followers"",""following_url"":""https://api.github.com/users/weikhor/f'"
+35,"b'ollowing{/other_user}"",""gists_url"":""https://api.github.com/users/weikhor/gists{/gist_id}"",""starred_url"":""https://api.github.com/'"
+36,"b'users/weikhor/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/weikhor/subscriptions"",""organizations_ur'"
+37,"b'l"":""https://api.github.com/users/weikhor/orgs"",""repos_url"":""https://api.github.com/users/weikhor/repos"",""events_url"":""https://ap'"
+38,"b'i.github.com/users/weikhor/events{/privacy}"",""received_events_url"":""https://api.github.com/users/weikhor/received_events"",""type""'"
+39,"b':""User"",""site_admin"":false},""labels"":[{""id"":127685,""node_id"":""MDU6TGFiZWwxMjc2ODU="",""url"":""https://api.github.com/repos/pandas-d'"
+40,"b'ev/pandas/labels/Testing"",""name"":""Testing"",""color"":""C4A000"",""default"":false,""description"":""pandas testing functions or related t'"
+41,"b'o the test suite""},{""id"":13098779,""node_id"":""MDU6TGFiZWwxMzA5ODc3OQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/lab'"
+42,"b'els/Reshaping"",""name"":""Reshaping"",""color"":""02d7e1"",""default"":false,""description"":""Concat, Merge/Join, Stack/Unstack, Explode""},{'"
+43,"b'""id"":71268330,""node_id"":""MDU6TGFiZWw3MTI2ODMzMA=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/MultiIndex"",""nam'"
+44,"b'e"":""MultiIndex"",""color"":""207de5"",""default"":false,""description"":null}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":'"
+45,"b'[],""milestone"":null,""comments"":1,""created_at"":""2022-02-04T14:58:29Z"",""updated_at"":""2022-02-04T16:01:54Z"",""closed_at"":null,""autho'"
+46,"b'r_association"":""CONTRIBUTOR"",""active_lock_reason"":null,""draft"":false,""pull_request"":{""url"":""https://api.github.com/repos/pandas-'"
+47,"b'dev/pandas/pulls/45822"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45822"",""diff_url"":""https://github.com/pandas-dev/p'"
+48,"b'andas/pull/45822.diff"",""patch_url"":""https://github.com/pandas-dev/pandas/pull/45822.patch"",""merged_at"":null},""body"":""- [\xe2\x9c\x94] clo'"
+49,b'ses #44786\\r\\n- [\xe2\x9c\x94 ] [Tests added and passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_codebase.html'
+50,b'#writing-tests) if fixing a bug or adding a new feature\\r\\n- [\xe2\x9c\x94] All [code checks passed](https://pandas.pydata.org/pandas-doc'
+51,b's/dev/development/contributing_codebase.html#pre-commit).\\r\\n- [X] Added an entry in the latest `doc/source/whatsnew/vX.X.X.rst`'
+52,"b' file if fixing a bug or adding a new feature.\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45'"
+53,"b'822/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""ht'"
+54,"b'tps://api.github.com/repos/pandas-dev/pandas/issues/45822/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.'"
+55,"b'com/repos/pandas-dev/pandas/issues/45821"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https:'"
+56,"b'//api.github.com/repos/pandas-dev/pandas/issues/45821/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pan'"
+57,"b'das/issues/45821/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45821/events"",""html_url"":""https:/'"
+58,"b'/github.com/pandas-dev/pandas/issues/45821"",""id"":1124275971,""node_id"":""I_kwDOAA0YD85DAxcD"",""number"":45821,""title"":""fillna(value='"
+59,"b'[partial-multi-index]) raises \\""A value is trying to be set on a copy of a slice from a DataFrame\\"" warning"",""user"":{""login"":""Po'"
+60,"b'nteaus"",""id"":89651850,""node_id"":""MDQ6VXNlcjg5NjUxODUw"",""avatar_url"":""https://avatars.githubusercontent.com/u/89651850?v=4"",""grav'"
+61,"b'atar_id"":"""",""url"":""https://api.github.com/users/Ponteaus"",""html_url"":""https://github.com/Ponteaus"",""followers_url"":""https://api.'"
+62,"b'github.com/users/Ponteaus/followers"",""following_url"":""https://api.github.com/users/Ponteaus/following{/other_user}"",""gists_url"":'"
+63,"b'""https://api.github.com/users/Ponteaus/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/Ponteaus/starred{/owner}{/re'"
+64,"b'po}"",""subscriptions_url"":""https://api.github.com/users/Ponteaus/subscriptions"",""organizations_url"":""https://api.github.com/users'"
+65,"b'/Ponteaus/orgs"",""repos_url"":""https://api.github.com/users/Ponteaus/repos"",""events_url"":""https://api.github.com/users/Ponteaus/ev'"
+66,"b'ents{/privacy}"",""received_events_url"":""https://api.github.com/users/Ponteaus/received_events"",""type"":""User"",""site_admin"":false},'"
+67,"b'""labels"":[],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-04T'"
+68,"b'14:39:14Z"",""updated_at"":""2022-02-04T14:45:21Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""``'"
+69,"b""`\\r\\nfrom pandas import DataFrame\\r\\ndf = DataFrame({'a':[1,2,3],'b':[1,2,3],'c':[1,2,3]})\\r\\npiv = df.pivot(columns='a',values="""
+70,"b""['b','c'])\\r\\npiv.fillna(value={'b':0,'c':100})\\r\\n```\\r\\n\\r\\nThis code produces the expected result, where all columns under th"""
+71,"b'e \'b\' index are filled with 0s and all columns under the \'c\' index are filled with 100s, but it unexpectedly raises a \\""/lib/pyt'"
+72,b'hon3.9/site-packages/pandas/core/frame.py:5176: SettingWithCopyWarning: A value is trying to be set on a copy of a slice from a '
+73,"b'DataFrame\\"" warning.\\r\\n\\r\\nThis warning is NOT raised if I fully specify the column index:\\r\\n\\r\\n```\\r\\nfrom pandas import Dat'"
+74,"b""aFrame\\r\\ndf = DataFrame({'a':[1,2,3],'b':[1,2,3],'c':[1,2,3]})\\r\\npiv = df.pivot(columns='a',values=['b','c'])\\r\\npiv.fillna(va"""
+75,"b""lue={('b',1):0,('b',2):0,('b',3):0,('c',1):100,('c',2):100,('c',3):100})\\r\\n```\\r\\n\\r\\nBut this is too verbose. The first code s"""
+76,"b'egment is preferred"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45821/reactions"",""total_count"":0,'"
+77,"b'""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pand'"
+78,"b'as-dev/pandas/issues/45821/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/iss'"
+79,"b'ues/45819"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-d'"
+80,"b'ev/pandas/issues/45819/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45819/comments"",""eve'"
+81,"b'nts_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45819/events"",""html_url"":""https://github.com/pandas-dev/pandas/i'"
+82,"b'ssues/45819"",""id"":1124141795,""node_id"":""I_kwDOAA0YD85DAQrj"",""number"":45819,""title"":""BUG: "",""user"":{""login"":""rodrigolece"",""id"":10'"
+83,"b'842041,""node_id"":""MDQ6VXNlcjEwODQyMDQx"",""avatar_url"":""https://avatars.githubusercontent.com/u/10842041?v=4"",""gravatar_id"":"""",""ur'"
+84,"b'l"":""https://api.github.com/users/rodrigolece"",""html_url"":""https://github.com/rodrigolece"",""followers_url"":""https://api.github.co'"
+85,"b'm/users/rodrigolece/followers"",""following_url"":""https://api.github.com/users/rodrigolece/following{/other_user}"",""gists_url"":""ht'"
+86,"b'tps://api.github.com/users/rodrigolece/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/rodrigolece/starred{/owner}{'"
+87,"b'/repo}"",""subscriptions_url"":""https://api.github.com/users/rodrigolece/subscriptions"",""organizations_url"":""https://api.github.com'"
+88,"b'/users/rodrigolece/orgs"",""repos_url"":""https://api.github.com/users/rodrigolece/repos"",""events_url"":""https://api.github.com/users'"
+89,"b'/rodrigolece/events{/privacy}"",""received_events_url"":""https://api.github.com/users/rodrigolece/received_events"",""type"":""User"",""s'"
+90,"b'ite_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/l'"
+91,"b'abels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjk'"
+92,"b'w"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default""'"
+93,"b':false,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,'"
+94,"b'""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-04T12:19:09Z"",""updated_at"":""2022-02-04T12:19:30Z"",""closed_at""'"
+95,"b':null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\r\\n\\r\\n- [X] I have checked that t'"
+96,b'his issue has not already been reported.\\r\\n\\r\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.py'
+97,b'data.org/docs/whatsnew/index.html) of pandas.\\r\\n\\r\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\r\\n\\r\\'
+98,"b'n\\r\\n### Reproducible Example\\r\\n\\r\\n```python\\r\\n>>> import pandas as pd\\r\\n>>> idx = pd.date_range(\\""2017\\"", freq=\\""SMS\\"", per'"
+99,"b""iods=4)\\r\\n>>> idx\\r\\nDatetimeIndex(['2017-01-01', '2017-01-15', '2017-02-01', '2017-02-15'],\\r\\n              dtype='datetime64"""
+100,"b'[ns]\', freq=\'SMS-15\')\\r\\n>>> pd.infer_freq(idx)\\r\\n# returns None\\r\\n>>> idx = pd.date_range(\\""2017\\"", freq=\\""SM\\"", periods=4)\\r'"
+101,b'\\n>>> pd.infer_freq(idx)\\r\\n# returns None\\r\\n```\\r\\n\\r\\n\\r\\n### Issue Description\\r\\n\\r\\nThe `infer_freq` method fails to infer'
+102,"b' the a Semi-Month frequency (both regular and start)\\r\\n\\r\\n### Expected Behavior\\r\\n\\r\\n```python\\r\\n>>> idx = pd.date_range(\\""'"
+103,"b'2017\\"", freq=\\""SMS\\"", periods=4)\\r\\n>>> pd.infer_freq(idx)\\r\\n\'SMS\'\\r\\n```\\r\\n\\r\\n### Installed Versions\\r\\n\\r\\n<details>\\r\\n\\r\\'"
+104,b'nNSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.'
+105,b'9.7.final.0\\r\\npython-bits      : 64\\r\\nOS               : Linux\\r\\nOS-release       : 5.4.0-96-generic\\r\\nVersion          : #1'
+106,b'09-Ubuntu SMP Wed Jan 12 16:49:16 UTC 2022\\r\\nmachine          : x86_64\\r\\nprocessor        : x86_64\\r\\nbyteorder        : littl'
+107,b'e\\r\\nLC_ALL           : None\\r\\nLANG             : en_GB.UTF8\\r\\nLOCALE           : en_GB.UTF-8\\r\\n\\r\\npandas           : 1.4.0\\'
+108,b'r\\nnumpy            : 1.20.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 21.2.4\\r\\nsetuptools'
+109,b'       : 58.0.4\\r\\nCython           : None\\r\\npytest           : None\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nb'
+110,b'losc            : None\\r\\nfeather          : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : None\\r\\nhtml5lib         : No'
+111,b'ne\\r\\npymysql          : None\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.2\\r\\nIPython          : 7.22.0\\r\\npandas_data'
+112,b'reader: None\\r\\nbs4              : None\\r\\nbottleneck       : 1.3.2\\r\\nfastparquet      : None\\r\\nfsspec           : None\\r\\ngcs'
+113,b'fs            : None\\r\\nmatplotlib       : 3.3.4\\r\\nnumba            : None\\r\\nnumexpr          : 2.8.1\\r\\nodfpy            : No'
+114,b'ne\\r\\nopenpyxl         : None\\r\\npandas_gbq       : None\\r\\npyarrow          : None\\r\\npyreadstat       : None\\r\\npyxlsb        '
+115,b'   : None\\r\\ns3fs             : None\\r\\nscipy            : 1.6.2\\r\\nsqlalchemy       : None\\r\\ntables           : None\\r\\ntabula'
+116,b'te         : 0.8.9\\r\\nxarray           : None\\r\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r'
+117,"b'\\n\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45819/reactions"",""total_coun'"
+118,"b't"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos'"
+119,"b'/pandas-dev/pandas/issues/45819/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/panda'"
+120,"b's/issues/45817"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pan'"
+121,"b'das-dev/pandas/issues/45817/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45817/comments""'"
+122,"b',""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45817/events"",""html_url"":""https://github.com/pandas-dev/pan'"
+123,"b'das/pull/45817"",""id"":1123793307,""node_id"":""PR_kwDOAA0YD84yD_fc"",""number"":45817,""title"":""REF: avoid ravel/reshape in astype_nansa'"
+124,"b'fe, ndarray_to_mgr"",""user"":{""login"":""jbrockmendel"",""id"":8078968,""node_id"":""MDQ6VXNlcjgwNzg5Njg="",""avatar_url"":""https://avatars.g'"
+125,"b'ithubusercontent.com/u/8078968?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/jbrockmendel"",""html_url"":""https://githu'"
+126,"b'b.com/jbrockmendel"",""followers_url"":""https://api.github.com/users/jbrockmendel/followers"",""following_url"":""https://api.github.co'"
+127,"b'm/users/jbrockmendel/following{/other_user}"",""gists_url"":""https://api.github.com/users/jbrockmendel/gists{/gist_id}"",""starred_ur'"
+128,"b'l"":""https://api.github.com/users/jbrockmendel/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/jbrockme'"
+129,"b'ndel/subscriptions"",""organizations_url"":""https://api.github.com/users/jbrockmendel/orgs"",""repos_url"":""https://api.github.com/use'"
+130,"b'rs/jbrockmendel/repos"",""events_url"":""https://api.github.com/users/jbrockmendel/events{/privacy}"",""received_events_url"":""https://'"
+131,"b'api.github.com/users/jbrockmendel/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":127681,""node_id"":""MDU6TGFiZ'"
+132,"b'WwxMjc2ODE="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Refactor"",""name"":""Refactor"",""color"":""FCE94F"",""default""'"
+133,"b':false,""description"":""Internal refactoring of code""},{""id"":49094459,""node_id"":""MDU6TGFiZWw0OTA5NDQ1OQ=="",""url"":""https://api.gith'"
+134,"b'ub.com/repos/pandas-dev/pandas/labels/Internals"",""name"":""Internals"",""color"":""fbca04"",""default"":false,""description"":""Related to n'"
+135,"b'on-user accessible pandas implementation""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":{""url"":""htt'"
+136,"b'ps://api.github.com/repos/pandas-dev/pandas/milestones/92"",""html_url"":""https://github.com/pandas-dev/pandas/milestone/92"",""label'"
+137,"b's_url"":""https://api.github.com/repos/pandas-dev/pandas/milestones/92/labels"",""id"":7530006,""node_id"":""MI_kwDOAA0YD84AcuYW"",""numbe'"
+138,"b'r"":92,""title"":""1.5"",""description"":"""",""creator"":{""login"":""jreback"",""id"":953992,""node_id"":""MDQ6VXNlcjk1Mzk5Mg=="",""avatar_url"":""htt'"
+139,"b'ps://avatars.githubusercontent.com/u/953992?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/jreback"",""html_url"":""https'"
+140,"b'://github.com/jreback"",""followers_url"":""https://api.github.com/users/jreback/followers"",""following_url"":""https://api.github.com/'"
+141,"b'users/jreback/following{/other_user}"",""gists_url"":""https://api.github.com/users/jreback/gists{/gist_id}"",""starred_url"":""https://'"
+142,"b'api.github.com/users/jreback/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/jreback/subscriptions"",""o'"
+143,"b'rganizations_url"":""https://api.github.com/users/jreback/orgs"",""repos_url"":""https://api.github.com/users/jreback/repos"",""events_u'"
+144,"b'rl"":""https://api.github.com/users/jreback/events{/privacy}"",""received_events_url"":""https://api.github.com/users/jreback/received'"
+145,"b'_events"",""type"":""User"",""site_admin"":false},""open_issues"":43,""closed_issues"":250,""state"":""open"",""created_at"":""2021-12-31T21:51:13'"
+146,"b'Z"",""updated_at"":""2022-02-04T16:37:14Z"",""due_on"":""2022-06-30T07:00:00Z"",""closed_at"":null},""comments"":3,""created_at"":""2022-02-04T0'"
+147,"b'4:20:30Z"",""updated_at"":""2022-02-04T17:00:46Z"",""closed_at"":null,""author_association"":""MEMBER"",""active_lock_reason"":null,""draft"":f'"
+148,"b'alse,""pull_request"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/pulls/45817"",""html_url"":""https://github.com/pandas-de'"
+149,"b'v/pandas/pull/45817"",""diff_url"":""https://github.com/pandas-dev/pandas/pull/45817.diff"",""patch_url"":""https://github.com/pandas-de'"
+150,"b'v/pandas/pull/45817.patch"",""merged_at"":null},""body"":""- [ ] closes #xxxx (Replace xxxx with the Github issue number)\\r\\n- [ ] [Te'"
+151,b'sts added and passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_codebase.html#writing-tests) if fixing '
+152,b'a bug or adding a new feature\\r\\n- [ ] All [code checks passed](https://pandas.pydata.org/pandas-docs/dev/development/contributi'
+153,b'ng_codebase.html#pre-commit).\\r\\n- [ ] Added an entry in the latest `doc/source/whatsnew/vX.X.X.rst` file if fixing a bug or add'
+154,"b'ing a new feature.\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45817/reactions"",""total_count""'"
+155,"b':0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/p'"
+156,"b'andas-dev/pandas/issues/45817/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/'"
+157,"b'issues/45816"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/panda'"
+158,"b's-dev/pandas/issues/45816/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45816/comments"",""'"
+159,"b'events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45816/events"",""html_url"":""https://github.com/pandas-dev/panda'"
+160,"b's/issues/45816"",""id"":1123783951,""node_id"":""I_kwDOAA0YD85C-5UP"",""number"":45816,""title"":""BUG: df created with `columns` takes exce'"
+161,"b'edingly long time for `sum()`"",""user"":{""login"":""nirandaperera"",""id"":5582709,""node_id"":""MDQ6VXNlcjU1ODI3MDk="",""avatar_url"":""https'"
+162,"b'://avatars.githubusercontent.com/u/5582709?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/nirandaperera"",""html_url"":""'"
+163,"b'https://github.com/nirandaperera"",""followers_url"":""https://api.github.com/users/nirandaperera/followers"",""following_url"":""https:'"
+164,"b'//api.github.com/users/nirandaperera/following{/other_user}"",""gists_url"":""https://api.github.com/users/nirandaperera/gists{/gist'"
+165,"b'_id}"",""starred_url"":""https://api.github.com/users/nirandaperera/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.'"
+166,"b'com/users/nirandaperera/subscriptions"",""organizations_url"":""https://api.github.com/users/nirandaperera/orgs"",""repos_url"":""https:'"
+167,"b'//api.github.com/users/nirandaperera/repos"",""events_url"":""https://api.github.com/users/nirandaperera/events{/privacy}"",""received'"
+168,"b'_events_url"":""https://api.github.com/users/nirandaperera/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":7681'"
+169,"b'1,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c0'"
+170,"b'2"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos'"
+171,"b'/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has n'"
+172,"b'ot been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comme'"
+173,"b'nts"":4,""created_at"":""2022-02-04T04:01:36Z"",""updated_at"":""2022-02-04T16:22:58Z"",""closed_at"":null,""author_association"":""NONE"",""act'"
+174,"b'ive_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been reported.\\n'"
+175,b'\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\'
+176,b'n\\n- [ ] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimport panda'
+177,b's as pd \\r\\nimport numpy as np\\r\\nfrom numpy.random import default_rng\\r\\nimport time\\r\\n\\r\\nrng = default_rng()\\r\\n\\r\\nr = 1000'
+178,"b'000000\\r\\ndata = rng.integers(0, r, size=(r, 2))\\r\\ndf = pd.DataFrame(data).add_prefix(\\""col\\"")\\r\\n\\r\\nt1 = time.time()\\r\\ndf.su'"
+179,"b'm()\\r\\nt2 = time.time()\\r\\nprint((t2-t1)*1000)\\r\\n\\r\\ndf = pd.DataFrame(data, columns=[\\""col0\\"", \\""col1\\""])\\r\\nt1 = time.time()\\'"
+180,"b""r\\ndf.sum()\\r\\nt2 = time.time()\\r\\nprint((t2-t1)*1000)\\n```\\n\\n\\n### Issue Description\\n\\nRef: example. \\r\\nI'm creating a df fr"""
+181,"b'om a numpy array (10^9, 2) and then call `df.sum()`.\\r\\nWhen I create df from, `df = pd.DataFrame(data).add_prefix(\\""col\\"")` it '"
+182,"b'takes **1502ms** for the `df.sum()`\\r\\nBut, \\r\\nWhen I create df from, `df = pd.DataFrame(data, columns=[\\""col0\\"", \\""col1\\""])` i'"
+183,b't takes **11979ms** for the `df.sum()`! :astonished: \\r\\n\\r\\nWhy would there be such a drastic timing difference?\\n\\n### Expecte'
+184,b'd Behavior\\n\\nBoth cases should take similar times\\n\\n### Installed Versions\\n\\n<details>\\r\\n> pd.show_versions() \\r\\nTraceback '
+185,"b'(most recent call last):\\r\\n  File \\""<stdin>\\"", line 1, in <module>\\r\\n  File \\""******/.conda/envs/cylon_dev/lib/python3.8/site-'"
+186,"b'packages/pandas/util/_print_versions.py\\"", line 109, in show_versions\\r\\n    deps = _get_dependency_info()\\r\\n  File \\""******/.c'"
+187,"b'onda/envs/cylon_dev/lib/python3.8/site-packages/pandas/util/_print_versions.py\\"", line 88, in _get_dependency_info\\r\\n    mod = '"
+188,"b'import_optional_dependency(modname, errors=\\""ignore\\"")\\r\\n  File \\""******/.conda/envs/cylon_dev/lib/python3.8/site-packages/pand'"
+189,"b'as/compat/_optional.py\\"", line 126, in import_optional_dependency\\r\\n    module = importlib.import_module(name)\\r\\n  File \\""****'"
+190,"b'**/.conda/envs/cylon_dev/lib/python3.8/importlib/__init__.py\\"", line 127, in import_module\\r\\n    return _bootstrap._gcd_import('"
+191,"b'name[level:], package, level)\\r\\n  File \\""<frozen importlib._bootstrap>\\"", line 1014, in _gcd_import\\r\\n  File \\""<frozen importl'"
+192,"b'ib._bootstrap>\\"", line 991, in _find_and_load\\r\\n  File \\""<frozen importlib._bootstrap>\\"", line 975, in _find_and_load_unlocked\\'"
+193,"b'r\\n  File \\""<frozen importlib._bootstrap>\\"", line 671, in _load_unlocked\\r\\n  File \\""<frozen importlib._bootstrap_external>\\"", l'"
+194,"b'ine 843, in exec_module\\r\\n  File \\""<frozen importlib._bootstrap>\\"", line 219, in _call_with_frames_removed\\r\\n  File \\""******/.'"
+195,"b'conda/envs/cylon_dev/lib/python3.8/site-packages/setuptools/__init__.py\\"", line 8, in <module>\\r\\n    import _distutils_hack.ove'"
+196,"b'rride  # noqa: F401\\r\\n  File \\""******/.conda/envs/cylon_dev/lib/python3.8/site-packages/_distutils_hack/override.py\\"", line 1, '"
+197,"b'in <module>\\r\\n    __import__(\'_distutils_hack\').do_override()\\r\\n  File \\""******/.conda/envs/cylon_dev/lib/python3.8/site-packa'"
+198,"b'ges/_distutils_hack/__init__.py\\"", line 71, in do_override\\r\\n    ensure_local_distutils()\\r\\n  File \\""******/.conda/envs/cylon_'"
+199,"b'dev/lib/python3.8/site-packages/_distutils_hack/__init__.py\\"", line 59, in ensure_local_distutils\\r\\n    assert \'_distutils\' in '"
+200,"b'core.__file__, core.__file__\\r\\nAssertionError: ******/.conda/envs/cylon_dev/lib/python3.8/distutils/core.py\\r\\n\\r\\n> pd.__versi'"
+201,"b'on__\\r\\n\'1.4.0\'\\r\\n\\r\\n</details>\\r\\n\\r\\n\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45816/r'"
+202,"b'eactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https:/'"
+203,"b'/api.github.com/repos/pandas-dev/pandas/issues/45816/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/r'"
+204,"b'epos/pandas-dev/pandas/issues/45815"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api'"
+205,"b'.github.com/repos/pandas-dev/pandas/issues/45815/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/i'"
+206,"b'ssues/45815/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45815/events"",""html_url"":""https://gith'"
+207,"b'ub.com/pandas-dev/pandas/issues/45815"",""id"":1123744958,""node_id"":""I_kwDOAA0YD85C-vy-"",""number"":45815,""title"":""BUG: "",""user"":{""lo'"
+208,"b'gin"":""AlbertUlysses"",""id"":47486070,""node_id"":""MDQ6VXNlcjQ3NDg2MDcw"",""avatar_url"":""https://avatars.githubusercontent.com/u/474860'"
+209,"b'70?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/AlbertUlysses"",""html_url"":""https://github.com/AlbertUlysses"",""follo'"
+210,"b'wers_url"":""https://api.github.com/users/AlbertUlysses/followers"",""following_url"":""https://api.github.com/users/AlbertUlysses/fol'"
+211,"b'lowing{/other_user}"",""gists_url"":""https://api.github.com/users/AlbertUlysses/gists{/gist_id}"",""starred_url"":""https://api.github.'"
+212,"b'com/users/AlbertUlysses/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/AlbertUlysses/subscriptions"",""'"
+213,"b'organizations_url"":""https://api.github.com/users/AlbertUlysses/orgs"",""repos_url"":""https://api.github.com/users/AlbertUlysses/rep'"
+214,"b'os"",""events_url"":""https://api.github.com/users/AlbertUlysses/events{/privacy}"",""received_events_url"":""https://api.github.com/use'"
+215,"b'rs/AlbertUlysses/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url""'"
+216,"b':""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{'"
+217,"b'""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage'"
+218,"b'"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member'"
+219,"b'""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":1,""created_at"":""2022-02-04T02:24:54'"
+220,"b'Z"",""updated_at"":""2022-02-04T05:10:43Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas'"
+221,b' version checks\\r\\n\\r\\n- [X] I have checked that this issue has not already been reported.\\r\\n\\r\\n- [X] I have confirmed this bu'
+222,b'g exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\r\\n\\r\\n- [X] I have confirmed th'
+223,b'is bug exists on the main branch of pandas.\\r\\n\\r\\n\\r\\n### Reproducible Example\\r\\n\\r\\n```python\\r\\n>>> import pandas as pd\\r\\n>'
+224,"b"">> data_frame = pd.read_csv('file.csv')\\r\\n>>> cols_ = ['entityIdentifierLocal']\\r\\ndata_frame.to_parquet('datasets/',partitions"""
+225,"b'_cols=cols_)\\r\\n```\\r\\n\\r\\n\\r\\n\\r\\n### Issue Description\\r\\n\\r\\nWhen using the code given above, the return error given is wrong'"
+226,"b'.\\r\\nThe error indicates that the local file had an issue; however, I put \\""partitions_cols\\"" instead of \\""partition_cols.\\"" I l'"
+227,"b'eft an \\""s\\"" in by accident.\\r\\nError:\\r\\n```\\r\\nile \\""<stdin>\\"", line 1, in <module>\\r\\n File \\""/Users/Documents/repos/test/.ve'"
+228,"b'nv/lib/python3.8/site-packages/pandas/util/_decorators.py\\"", line 207, in wrapper\\r\\n  return func(*args, **kwargs)\\r\\n File \\""/'"
+229,"b'Users//Documents/repos/test/.venv/lib/python3.8/site-packages/pandas/core/frame.py\\"", line 2836, in to_parquet\\r\\n  return to_pa'"
+230,"b'rquet(\\r\\n File \\""/Users//Documents/repos/test/.venv/lib/python3.8/site-packages/pandas/io/parquet.py\\"", line 420, in to_parquet'"
+231,"b'\\r\\n  impl.write(\\r\\n File \\""/Users//Documents/repos/test/.venv/lib/python3.8/site-packages/pandas/io/parquet.py\\"", line 195, in'"
+232,"b' write\\r\\n  self.api.parquet.write_table(\\r\\n File \\""/Users//Documents/repos/test/.venv/lib/python3.8/site-packages/pyarrow/parq'"
+233,"b'uet.py\\"", line 1800, in write_table\\r\\n  with ParquetWriter(\\r\\n File \\""/Users//Documents/repos/test/.venv/lib/python3.8/site-pa'"
+234,"b'ckages/pyarrow/parquet.py\\"", line 633, in __init__\\r\\nsink = self.file_handle = filesystem.open_output_stream(\\r\\n File \\""pyarro'"
+235,"b'w/_fs.pyx\\"", line 660, in pyarrow._fs.FileSystem.open_output_stream\\r\\n File \\""pyarrow/error.pxi\\"", line 141, in pyarrow.lib.pya'"
+236,"b'rrow_internal_check_status\\r\\n File \\""pyarrow/error.pxi\\"", line 110, in pyarrow.lib.check_status\\r\\nIsADirectoryError: [Errno 21'"
+237,"b""] Failed to open local file 'datasets/'. Detail: [errno 21] Is a directory\\r\\n```\\r\\n\\r\\n\\r\\n### Expected Behavior\\r\\n\\r\\nIt sho"""
+238,"b""uld say\\r\\n```\\r\\nTypeError: __cinit__() got an unexpected keyword argument 'partitions_cols'\\r\\n```\\r\\n\\r\\nI get that error whe"""
+239,"b""n I write this:\\r\\n\\r\\n```\\r\\ndata_frame.to_parquet('temp.parquet', partitions_cols=cols_)\\r\\n```\\r\\n\\r\\n### Installed Versions\\"""
+240,b'r\\n\\r\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\'
+241,b'r\\npython           : 3.8.2.final.0\\r\\npython-bits      : 64\\r\\nOS               : Darwin\\r\\nOS-release       : 20.6.0\\r\\nVersio'
+242,b'n          : Darwin Kernel Version 20.6.0: Tue Oct 12 18:33:42 PDT 2021; root:xnu-7195.141.8~1/RELEASE_X86_64\\r\\nmachine        '
+243,b'  : x86_64\\r\\nprocessor        : i386\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_US.UTF-8\\'
+244,b'r\\nLOCALE           : en_US.UTF-8\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.22.2\\r\\npytz             : 2021.3\\r\\nd'
+245,b'ateutil         : 2.8.2\\r\\npip              : 22.0.2\\r\\nsetuptools       : 41.2.0\\r\\nCython           : None\\r\\npytest          '
+246,b' : 6.2.5\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwrit'
+247,b'er       : None\\r\\nlxml.etree       : 4.6.4\\r\\nhtml5lib         : None\\r\\npymysql          : 1.0.2\\r\\npsycopg2         : None\\r\\'
+248,b'njinja2           : 3.0.3\\r\\nIPython          : 7.30.0\\r\\npandas_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck    '
+249,b'   : None\\r\\nfastparquet      : None\\r\\nfsspec           : 2021.07.0\\r\\ngcsfs            : None\\r\\nmatplotlib       : None\\r\\nnu'
+250,b'mba            : None\\r\\nnumexpr          : None\\r\\nodfpy            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : No'
+251,b'ne\\r\\npyarrow          : 4.0.0\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : 2021.08.0\\r\\nscipy   '
+252,b'         : 1.7.3\\r\\nsqlalchemy       : 1.3.18\\r\\ntables           : None\\r\\ntabulate         : None\\r\\nxarray           : None\\r'
+253,"b'\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https'"
+254,"b'://api.github.com/repos/pandas-dev/pandas/issues/45815/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":'"
+255,"b'0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45815/timeline"",""performe'"
+256,"b'd_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45814"",""repository_url"":""https://api.githu'"
+257,"b'b.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45814/labels{/name}"",""comment'"
+258,"b's_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45814/comments"",""events_url"":""https://api.github.com/repos/pandas-'"
+259,"b'dev/pandas/issues/45814/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45814"",""id"":1123735114,""node_id"":""I_kwDO'"
+260,"b'AA0YD85C-tZK"",""number"":45814,""title"":""BUG: Inaccuracy in groupby covariance when min_periods==ddof==2"",""user"":{""login"":""skirui-s'"
+261,"b'ource"",""id"":71867292,""node_id"":""MDQ6VXNlcjcxODY3Mjky"",""avatar_url"":""https://avatars.githubusercontent.com/u/71867292?v=4"",""grava'"
+262,"b'tar_id"":"""",""url"":""https://api.github.com/users/skirui-source"",""html_url"":""https://github.com/skirui-source"",""followers_url"":""htt'"
+263,"b'ps://api.github.com/users/skirui-source/followers"",""following_url"":""https://api.github.com/users/skirui-source/following{/other_'"
+264,"b'user}"",""gists_url"":""https://api.github.com/users/skirui-source/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/skir'"
+265,"b'ui-source/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/skirui-source/subscriptions"",""organizations_'"
+266,"b'url"":""https://api.github.com/users/skirui-source/orgs"",""repos_url"":""https://api.github.com/users/skirui-source/repos"",""events_ur'"
+267,"b'l"":""https://api.github.com/users/skirui-source/events{/privacy}"",""received_events_url"":""https://api.github.com/users/skirui-sour'"
+268,"b'ce/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.'"
+269,"b'github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":195472029'"
+270,"b'0,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Need'"
+271,"b's Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""o'"
+272,"b'pen"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-04T02:04:43Z"",""updated_at'"
+273,"b'"":""2022-02-04T02:06:45Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version check'"
+274,b's\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\n- [ ] I have confirmed this bug exists on the [lates'
+275,b't version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the main '
+276,b'branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nIn [1]: import pandas as pd\\r\\n\\r\\nIn [2]: pdf = pd.DataFrame(\\r\\n'
+277,"b'   ...:     {\\r\\n   ...:         \\""id\\"": [\\""a\\"", \\""a\\"", \\""b\\"", \\""b\\"", \\""c\\"", \\""c\\""],\\r\\n   ...:         \\""val1\\"": [1.0, 2.0, 3.0'"
+278,"b', 4.0, 5.0, 6.0],\\r\\n   ...:         \\""val2\\"": pd.Series([None, None, None, None, None, None], dtype=float),\\r\\n   ...:     }\\r\\'"
+279,b'n   ...: )\\r\\n   ...: pdf\\r\\nOut[2]: \\r\\n  id val1  val2\\r\\n0  a  1.0   NaN\\r\\n1  a  2.0   NaN\\r\\n2  b  3.0   NaN\\r\\n3  b  4.0  '
+280,"b' NaN\\r\\n4  c  5.0   NaN\\r\\n5  c  6.0   NaN\\r\\n\\r\\nIn [3]: pdf.groupby(\\""id\\"").cov(min_periods=2, ddof=2)\\r\\nOut[3]: \\r\\n        '"
+281,b'val1  val2\\r\\nid                \\r\\na  val   0.5   NaN\\r\\n   val1  NaN   NaN\\r\\nb  val   0.5   NaN\\r\\n   val1  NaN   NaN\\r\\nc  v'
+282,"b""al   0.5   NaN\\r\\n   val1  NaN   NaN\\n```\\n\\n\\n### Issue Description\\n\\nThere's a bug in pandas when calculating the groupby cov"""
+283,"b'ariance of  a DataFrame , with `min_periods== ddof == 2`. \\r\\nIssue exists in pandas v1.3.5\\n\\n### Expected Behavior\\n\\nThe expe'"
+284,b'cted behavior is to return a DataFrame containing all `NaN `values:\\r\\n```\\r\\nOut[4]: \\r\\n         val1  val2\\r\\nid             '
+285,b'    \\r\\na  val   <NA>  <NA>\\r\\n   val1  <NA>  <NA>\\r\\nb  val   <NA>  <NA>\\r\\n   val1  <NA>  <NA>\\r\\nc  val   <NA>  <NA>\\r\\n   va'
+286,b'l1  <NA>  <NA>\\r\\n\\r\\n```\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nIn [5]: pd.show_versions()\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n'
+287,b'------------------\\r\\ncommit           : 66e3805b8cabe977f40c05259cc3fcf7ead5687d\\r\\npython           : 3.8.12.final.0\\r\\npython'
+288,b'-bits      : 64\\r\\nOS               : Linux\\r\\nOS-release       : 4.15.0-76-generic\\r\\nVersion          : #86-Ubuntu SMP Fri Jan'
+289,b' 17 17:24:28 UTC 2020\\r\\nmachine          : x86_64\\r\\nprocessor        : x86_64\\r\\nbyteorder        : little\\r\\nLC_ALL          '
+290,b' : None\\r\\nLANG             : None\\r\\nLOCALE           : en_US.UTF-8\\r\\n\\r\\npandas           : 1.3.5\\r\\nnumpy            : 1.21.'
+291,b'5\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 21.3.1\\r\\nsetuptools       : 59.8.0\\r\\nCython  '
+292,b'         : 0.29.26\\r\\npytest           : 6.2.5\\r\\nhypothesis       : 6.36.0\\r\\nsphinx           : 4.4.0\\r\\nblosc            : No'
+293,b'ne\\r\\nfeather          : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib         : None\\r\\npymysql      '
+294,b'    : None\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.3\\r\\nIPython          : 8.0.1\\r\\npandas_datareader: None\\r\\nbs4 '
+295,b'             : 4.10.0\\r\\nbottleneck       : None\\r\\nfsspec           : 2022.01.0\\r\\nfastparquet      : None\\r\\ngcsfs            '
+296,b': None\\r\\nmatplotlib       : None\\r\\nnumexpr          : None\\r\\nodfpy            : None\\r\\nopenpyxl         : None\\r\\npandas_gbq'
+297,b'       : None\\r\\npyarrow          : 5.0.0\\r\\npyxlsb           : None\\r\\ns3fs             : None\\r\\nscipy            : None\\r\\nsq'
+298,b'lalchemy       : None\\r\\ntables           : None\\r\\ntabulate         : None\\r\\nxarray           : None\\r\\nxlrd             : Non'
+299,"b'e\\r\\nxlwt             : None\\r\\nnumba            : 0.55.0\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repo'"
+300,"b's/pandas-dev/pandas/issues/45814/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0'"
+301,"b',""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45814/timeline"",""performed_via_github_app"":null'"
+302,"b'},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45813"",""repository_url"":""https://api.github.com/repos/pandas-dev'"
+303,"b'/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45813/labels{/name}"",""comments_url"":""https://api.gi'"
+304,"b'thub.com/repos/pandas-dev/pandas/issues/45813/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/4581'"
+305,"b'3/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45813"",""id"":1123691019,""node_id"":""I_kwDOAA0YD85C-ioL"",""number""'"
+306,"b':45813,""title"":""ENH: Show data types under column names"",""user"":{""login"":""pwwang"",""id"":1188067,""node_id"":""MDQ6VXNlcjExODgwNjc="",'"
+307,"b'""avatar_url"":""https://avatars.githubusercontent.com/u/1188067?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/pwwang"",'"
+308,"b'""html_url"":""https://github.com/pwwang"",""followers_url"":""https://api.github.com/users/pwwang/followers"",""following_url"":""https://'"
+309,"b'api.github.com/users/pwwang/following{/other_user}"",""gists_url"":""https://api.github.com/users/pwwang/gists{/gist_id}"",""starred_u'"
+310,"b'rl"":""https://api.github.com/users/pwwang/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/pwwang/subscr'"
+311,"b'iptions"",""organizations_url"":""https://api.github.com/users/pwwang/orgs"",""repos_url"":""https://api.github.com/users/pwwang/repos"",'"
+312,"b'""events_url"":""https://api.github.com/users/pwwang/events{/privacy}"",""received_events_url"":""https://api.github.com/users/pwwang/r'"
+313,"b'eceived_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76812,""node_id"":""MDU6TGFiZWw3NjgxMg=="",""url"":""https://api.gith'"
+314,"b'ub.com/repos/pandas-dev/pandas/labels/Enhancement"",""name"":""Enhancement"",""color"":""4E9A06"",""default"":false,""description"":null},{""i'"
+315,"b'd"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",'"
+316,"b'""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member""}'"
+317,"b'],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":1,""created_at"":""2022-02-04T00:32:53Z""'"
+318,"b',""updated_at"":""2022-02-04T00:38:41Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""#### Is your'"
+319,"b"" feature request related to a problem?\\r\\n\\r\\n\\r\\n#### Describe the solution you'd like\\r\\n\\r\\nData types are shown directly in """
+320,b'`R` under column names:\\r\\n\\r\\n```R\\r\\n# A tibble: 4 \xc3\x97 2\\r\\n      x     y\\r\\n  <dbl> <int>\\r\\n1     1     1\\r\\n2     1     2\\r\\'
+321,b'n3     2     3\\r\\n4     2     4\\r\\n```\\r\\n\\r\\nWish pandas could have this feature as well.\\r\\n\\r\\n\\r\\n#### API breaking implicat'
+322,"b""ions\\r\\n\\r\\n\\r\\n\\r\\n#### Describe alternatives you've considered\\r\\n\\r\\nhttps://github.com/pwwang/pdtypes\\r\\n\\r\\n| Turn this | i"""
+323,b'nto |\\r\\n| --------- | ---- |\\r\\n| ![terminal_without_pdtypes][1] | ![terminal_with_pdtypes][2] |\\r\\n| ![terminal_without_pdtype'
+324,b's_gf][3] | ![terminal_with_pdtypes_gf][4] |\\r\\n| ![notebook_without_pdtypes][5] | ![notebook_with_pdtypes][6] |\\r\\n| ![notebook_'
+325,b'without_pdtypes_gf][7] | ![notebook_with_pdtypes_gf][8] |\\r\\n\\r\\nJust wondering if this is a welcome to become a PR.\\r\\n\\r\\n####'
+326,b' Additional context\\r\\n\\r\\n[1]: https://raw.githubusercontent.com/pwwang/pdtypes/master/docs/terminal_without_pdtypes.png\\r\\n[2]'
+327,b': https://raw.githubusercontent.com/pwwang/pdtypes/master/docs/terminal_with_pdtypes.png\\r\\n[3]: https://raw.githubusercontent.c'
+328,b'om/pwwang/pdtypes/master/docs/terminal_without_pdtypes_gf.png\\r\\n[4]: https://raw.githubusercontent.com/pwwang/pdtypes/master/do'
+329,b'cs/terminal_with_pdtypes_gf.png\\r\\n[5]: https://raw.githubusercontent.com/pwwang/pdtypes/master/docs/notebook_without_pdtypes.pn'
+330,b'g\\r\\n[6]: https://raw.githubusercontent.com/pwwang/pdtypes/master/docs/notebook_with_pdtypes.png\\r\\n[7]: https://raw.githubuserc'
+331,b'ontent.com/pwwang/pdtypes/master/docs/notebook_without_pdtypes_gf.png\\r\\n[8]: https://raw.githubusercontent.com/pwwang/pdtypes/m'
+332,"b'aster/docs/notebook_with_pdtypes_gf.png\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45813/rea'"
+333,"b'ctions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://a'"
+334,"b'pi.github.com/repos/pandas-dev/pandas/issues/45813/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/rep'"
+335,"b'os/pandas-dev/pandas/issues/45811"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.g'"
+336,"b'ithub.com/repos/pandas-dev/pandas/issues/45811/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/iss'"
+337,"b'ues/45811/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45811/events"",""html_url"":""https://github'"
+338,"b'.com/pandas-dev/pandas/issues/45811"",""id"":1123633107,""node_id"":""I_kwDOAA0YD85C-UfT"",""number"":45811,""title"":""BUG: Merge inner joi'"
+339,"b'n on index is working as left join for NaN"",""user"":{""login"":""hliatrussellinvestments"",""id"":70167716,""node_id"":""MDQ6VXNlcjcwMTY3N'"
+340,"b'zE2"",""avatar_url"":""https://avatars.githubusercontent.com/u/70167716?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/hl'"
+341,"b'iatrussellinvestments"",""html_url"":""https://github.com/hliatrussellinvestments"",""followers_url"":""https://api.github.com/users/hli'"
+342,"b'atrussellinvestments/followers"",""following_url"":""https://api.github.com/users/hliatrussellinvestments/following{/other_user}"",""g'"
+343,"b'ists_url"":""https://api.github.com/users/hliatrussellinvestments/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/hli'"
+344,"b'atrussellinvestments/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/hliatrussellinvestments/subscript'"
+345,"b'ions"",""organizations_url"":""https://api.github.com/users/hliatrussellinvestments/orgs"",""repos_url"":""https://api.github.com/users/'"
+346,"b'hliatrussellinvestments/repos"",""events_url"":""https://api.github.com/users/hliatrussellinvestments/events{/privacy}"",""received_ev'"
+347,"b'ents_url"":""https://api.github.com/users/hliatrussellinvestments/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""i'"
+348,"b'd"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color""'"
+349,"b':""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.co'"
+350,"b'm/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue tha'"
+351,"b't has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null'"
+352,"b',""comments"":2,""created_at"":""2022-02-03T22:50:09Z"",""updated_at"":""2022-02-04T12:17:10Z"",""closed_at"":null,""author_association"":""NON'"
+353,"b'E"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been repo'"
+354,b'rted.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of p'
+355,b'andas.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimpor'
+356,"b""t pandas as pd\\r\\n\\r\\ndf_1 = pd.DataFrame({'a': [1,2,3,4,5],\\r\\n                     'b': [1,2,None, 4, None],\\r\\n              """
+357,"b""       'c': [1,2,3,4,5]}).set_index(['a', 'b'])\\r\\n\\r\\ndf_2 = pd.DataFrame({'a': [1,2,3,4,5],\\r\\n                     'b': [1,2,"""
+358,"b""3, 4, 5],\\r\\n                     'c': [1,2,3,4,5]}).set_index(['a', 'b'])\\r\\n\\r\\ndf_merge = pd.merge(df_1, df_2, left_index=Tru"""
+359,"b""e, right_index=True, how='inner')\\r\\nprint(df_merge)\\n```\\n\\n\\n### Issue Description\\n\\nWhen merging (inner) 2 data frames on in"""
+360,"b'dex, if the left index contains NaN, then this row might stay in the result. As in the example above, the third row and last row'"
+361,b' from the left data frame stay in the merge result.\\n\\n### Expected Behavior\\n\\nI expect only 3 rows in the result. The third ro'
+362,b'w and last row from the left data frame should not be in the result.\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VER'
+363,b'SIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.8.6.final.0\\r'
+364,b'\\npython-bits      : 64\\r\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19041\\r\\nmachine      '
+365,"b'    : AMD64\\r\\nprocessor        : Intel64 Family 6 Model 158 Stepping 13, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL   '"
+366,b'        : None\\r\\nLANG             : None\\r\\nLOCALE           : English_United States.1252\\r\\npandas           : 1.4.0\\r\\nnumpy '
+367,b'           : 1.19.0\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.1\\r\\npip              : 21.3.1\\r\\nsetuptools       : '
+368,b'49.2.1\\r\\nCython           : None\\r\\npytest           : 5.4.1\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc    '
+369,b'        : None\\r\\nfeather          : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : None\\r\\nhtml5lib         : None\\r\\npy'
+370,b'mysql          : None\\r\\npsycopg2         : None\\r\\njinja2           : 2.11.1\\r\\nIPython          : None\\r\\npandas_datareader: N'
+371,b'one\\r\\nbs4              : None\\r\\nbottleneck       : None\\r\\nfastparquet      : None\\r\\nfsspec           : 2021.10.0\\r\\ngcsfs   '
+372,b'         : None\\r\\nmatplotlib       : None\\r\\nnumba            : None\\r\\nnumexpr          : None\\r\\nodfpy            : None\\r\\no'
+373,b'penpyxl         : None\\r\\npandas_gbq       : None\\r\\npyarrow          : None\\r\\npyreadstat       : None\\r\\npyxlsb           : No'
+374,b'ne\\r\\ns3fs             : None\\r\\nscipy            : 1.5.4\\r\\nsqlalchemy       : 1.4.31\\r\\ntables           : None\\r\\ntabulate   '
+375,b'      : None\\r\\nxarray           : None\\r\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n'
+376,"b'\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45811/reactions"",""total_count"":0,""'"
+377,"b'+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/panda'"
+378,"b's-dev/pandas/issues/45811/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issu'"
+379,"b'es/45810"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-de'"
+380,"b'v/pandas/issues/45810/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45810/comments"",""even'"
+381,"b'ts_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45810/events"",""html_url"":""https://github.com/pandas-dev/pandas/is'"
+382,"b'sues/45810"",""id"":1123573910,""node_id"":""I_kwDOAA0YD85C-GCW"",""number"":45810,""title"":""BUG: `Float64` gets mixed with `np.nan` and c'"
+383,"b'ause `sum` to be `nan`"",""user"":{""login"":""ChiQiao"",""id"":35905338,""node_id"":""MDQ6VXNlcjM1OTA1MzM4"",""avatar_url"":""https://avatars.g'"
+384,"b'ithubusercontent.com/u/35905338?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/ChiQiao"",""html_url"":""https://github.co'"
+385,"b'm/ChiQiao"",""followers_url"":""https://api.github.com/users/ChiQiao/followers"",""following_url"":""https://api.github.com/users/ChiQia'"
+386,"b'o/following{/other_user}"",""gists_url"":""https://api.github.com/users/ChiQiao/gists{/gist_id}"",""starred_url"":""https://api.github.c'"
+387,"b'om/users/ChiQiao/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/ChiQiao/subscriptions"",""organizations'"
+388,"b'_url"":""https://api.github.com/users/ChiQiao/orgs"",""repos_url"":""https://api.github.com/users/ChiQiao/repos"",""events_url"":""https:/'"
+389,"b'/api.github.com/users/ChiQiao/events{/privacy}"",""received_events_url"":""https://api.github.com/users/ChiQiao/received_events"",""ty'"
+390,"b'pe"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas'"
+391,"b'-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":2822342,""node_id"":""MDU6TGFiZWwyO'"
+392,"b'DIyMzQy"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Missing-data"",""name"":""Missing-data"",""color"":""d7e102"",""defa'"
+393,"b'ult"":false,""description"":""np.nan, pd.NaT, pd.NA, dropna, isnull, interpolate""},{""id"":1817503692,""node_id"":""MDU6TGFiZWwxODE3NTAzN'"
+394,"b'jky"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/NA%20-%20MaskedArrays"",""name"":""NA - MaskedArrays"",""color"":""8cc'"
+395,"b'645"",""default"":false,""description"":""Related to pd.NA and nullable extension arrays""}],""state"":""open"",""locked"":false,""assignee"":n'"
+396,"b'ull,""assignees"":[],""milestone"":null,""comments"":5,""created_at"":""2022-02-03T21:29:08Z"",""updated_at"":""2022-02-04T15:18:03Z"",""closed'"
+397,"b'_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that t'"
+398,b'his issue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata'
+399,b'.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Repro'
+400,"b'ducible Example\\n\\n```python\\nimport pandas as pd\\r\\na = pd.Series([0, np.nan], dtype=\\""float\\"")\\r\\nb = pd.Series([0, 1], dtype='"
+401,"b'\\""Int64\\"")\\r\\n(a * b).sum()\\n```\\n\\n\\n### Issue Description\\n\\nAccording to https://pandas.pydata.org/docs/dev/user_guide/missin'"
+402,"b'g_data.html#calculations-with-missing-data, missing data should be treated as 0 when calculating the sum, while the code above y'"
+403,"b'ields `np.nan`. \\r\\n\\r\\nWhen constructing a `Series` with `dtype=\\""Float64\\""`, `np.nan` is converted to `pd.NA`. In the code abo'"
+404,"b've, the type of `a * b` is inferred as `Float64`, but `np.nan` persists. \\n\\n### Expected Behavior\\n\\nreturns 0\\n\\n### Installed'"
+405,b' Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00'
+406,b'046ee\\r\\npython           : 3.9.10.final.0\\r\\npython-bits      : 64\\r\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVe'
+407,"b'rsion          : 10.0.19043\\r\\nmachine          : AMD64\\r\\nprocessor        : Intel64 Family 6 Model 142 Stepping 10, GenuineInt'"
+408,b'el\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE           : English_Unite'
+409,b'd States.1252\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.22.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.'
+410,b'8.2\\r\\npip              : 22.0.2\\r\\nsetuptools       : 59.8.0\\r\\nCython           : None\\r\\npytest           : 6.2.5\\r\\nhypothes'
+411,b'is       : None\\r\\nsphinx           : None\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwriter       : 3.0.2\\r\\n'
+412,b'lxml.etree       : 4.7.1\\r\\nhtml5lib         : None\\r\\npymysql          : 1.0.2\\r\\npsycopg2         : None\\r\\njinja2           :'
+413,b' 3.0.3\\r\\nIPython          : 7.30.1\\r\\npandas_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck       : None\\r\\nfastpa'
+414,b'rquet      : 0.8.0\\r\\nfsspec           : 2021.11.1\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba            : '
+415,b'None\\r\\nnumexpr          : 2.7.3\\r\\nodfpy            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npyarrow   '
+416,b'       : 3.0.0\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : 0.4.2\\r\\nscipy            : 1.7.3\\r\\n'
+417,b'sqlalchemy       : 1.4.31\\r\\ntables           : 3.7.0\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.21.1\\r\\nxlrd          '
+418,"b'   : 2.0.1\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.c'"
+419,"b'om/repos/pandas-dev/pandas/issues/45810/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""ro'"
+420,"b'cket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45810/timeline"",""performed_via_github_ap'"
+421,"b'p"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45809"",""repository_url"":""https://api.github.com/repos/pan'"
+422,"b'das-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45809/labels{/name}"",""comments_url"":""https:/'"
+423,"b'/api.github.com/repos/pandas-dev/pandas/issues/45809/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issu'"
+424,"b'es/45809/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45809"",""id"":1123551689,""node_id"":""I_kwDOAA0YD85C-AnJ"",""'"
+425,"b'number"":45809,""title"":""BUG: df.plot.scatter() with `norm` keyword fails with \'multiple values for keyword argument\' TypeError"",""'"
+426,"b'user"":{""login"":""Andy-Grigg"",""id"":6451062,""node_id"":""MDQ6VXNlcjY0NTEwNjI="",""avatar_url"":""https://avatars.githubusercontent.com/u/'"
+427,"b'6451062?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/Andy-Grigg"",""html_url"":""https://github.com/Andy-Grigg"",""follow'"
+428,"b'ers_url"":""https://api.github.com/users/Andy-Grigg/followers"",""following_url"":""https://api.github.com/users/Andy-Grigg/following{'"
+429,"b'/other_user}"",""gists_url"":""https://api.github.com/users/Andy-Grigg/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/'"
+430,"b'Andy-Grigg/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/Andy-Grigg/subscriptions"",""organizations_ur'"
+431,"b'l"":""https://api.github.com/users/Andy-Grigg/orgs"",""repos_url"":""https://api.github.com/users/Andy-Grigg/repos"",""events_url"":""http'"
+432,"b's://api.github.com/users/Andy-Grigg/events{/privacy}"",""received_events_url"":""https://api.github.com/users/Andy-Grigg/received_ev'"
+433,"b'ents"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/rep'"
+434,"b'os/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""M'"
+435,"b'DU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""col'"
+436,"b'or"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":'"
+437,"b'false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-03T21:04:18Z"",""updated_at"":""2022-02-03T'"
+438,"b'21:04:58Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\r\\n\\r\\n- [X]'"
+439,b' I have checked that this issue has not already been reported.\\r\\n\\r\\n- [X] I have confirmed this bug exists on the [latest vers'
+440,b'ion](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\r\\n\\r\\n- [X] I have confirmed this bug exists on the main br'
+441,b'anch of pandas.\\r\\n\\r\\n\\r\\n### Reproducible Example\\r\\n\\r\\n```python\\r\\nimport pandas as pd\\r\\nimport matplotlib\\r\\n\\r\\ndf = pd.'
+442,"b'DataFrame([{\'1\': 1.0, \'2\': 2.0, \'3\': 100},\\r\\n                   {\'1\': 1.2, \'2\': 1.8, \'3\': 10}])\\r\\n\\r\\ndf.plot.scatter(x=\\""1\\"",'"
+443,"b' y=\\""2\\"", c=\\""3\\"", norm=matplotlib.colors.LogNorm())\\r\\n```\\r\\n\\r\\n\\r\\n### Issue Description\\r\\n\\r\\nThe code above shows creatin'"
+444,"b'g a DataFrame with three numeric columns, and then plotting the dataframe as a 2D scatter with a color axis based on one of the '"
+445,b'columns.\\r\\n\\r\\nWhen running this code the following traceback is generated:\\r\\n\\r\\nTraceback (most recent call last):\\r\\n  File'
+446,"b' \\""C:\\\\ansysdev\\\\pandas-bug.py\\"", line 7, in <module>\\r\\n    df.plot.scatter(x=\\""1\\"", y=\\""2\\"", c=\\""3\\"", norm=matplotlib.colors.L'"
+447,"b'ogNorm())\\r\\n  File \\""C:\\\\ansysdev\\\\pandas-venv\\\\lib\\\\site-packages\\\\pandas\\\\plotting\\\\_core.py\\"", line 1669, in scatter\\r\\n    '"
+448,"b'return self(kind=\\""scatter\\"", x=x, y=y, s=s, c=c, **kwargs)\\r\\n  File \\""C:\\\\ansysdev\\\\pandas-venv\\\\lib\\\\site-packages\\\\pandas\\\\p'"
+449,"b'lotting\\\\_core.py\\"", line 917, in __call__\\r\\n    return plot_backend.plot(data, x=x, y=y, kind=kind, **kwargs)\\r\\n  File \\""C:\\\\'"
+450,"b'ansysdev\\\\pandas-venv\\\\lib\\\\site-packages\\\\pandas\\\\plotting\\\\_matplotlib\\\\__init__.py\\"", line 71, in plot\\r\\n    plot_obj.genera'"
+451,"b'te()\\r\\n  File \\""C:\\\\ansysdev\\\\pandas-venv\\\\lib\\\\site-packages\\\\pandas\\\\plotting\\\\_matplotlib\\\\core.py\\"", line 329, in generate\\'"
+452,"b'r\\n    self._make_plot()\\r\\n  File \\""C:\\\\ansysdev\\\\pandas-venv\\\\lib\\\\site-packages\\\\pandas\\\\plotting\\\\_matplotlib\\\\core.py\\"", li'"
+453,"b'ne 1119, in _make_plot\\r\\n    scatter = ax.scatter(\\r\\nTypeError: matplotlib.axes._axes.Axes.scatter() got multiple values for k'"
+454,"b""eyword argument 'norm'\\r\\n\\r\\n### Expected Behavior\\r\\n\\r\\nI believe the issue was caused by this PR: https://github.com/pandas-"""
+455,"b'dev/pandas/pull/34293, specifically in this code block:\\r\\n\\r\\n```python\\r\\n        if color_by_categorical:\\r\\n            from'"
+456,b' matplotlib import colors\\r\\n\\r\\n            n_cats = len(self.data[c].cat.categories)\\r\\n            cmap = colors.ListedColorm'
+457,"b'ap([cmap(i) for i in range(cmap.N)])\\r\\n            bounds = np.linspace(0, n_cats, n_cats + 1)\\r\\n            norm = colors.Bou'"
+458,"b'ndaryNorm(bounds, cmap.N)\\r\\n        else:\\r\\n            norm = None\\r\\n```\\r\\n\\r\\nSince `color_by_categorical` is None, `norm`'"
+459,"b"" is being set to `None`. However, `norm` is also present in `self.kwds, which is where the 'multiple values for keyword argument"""
+460,"b""' TypeError is coming from. The else branch should probably do something like:\\r\\n\\r\\n`norm = self.kwds.pop('norm', None)`\\r\\n\\r"""
+461,"b""\\nThis would result in the user's choice of `norm` being respected.\\r\\n\\r\\nIf the maintainers agree with this change, I'm happy """
+462,b'to put together a PR with this in.\\r\\n\\r\\n### Installed Versions\\r\\n\\r\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n-----------------'
+463,b'-\\r\\ncommit           : 7651c08230914ded8fceb93c990e2c859d51510d\\r\\npython           : 3.10.0.final.0\\r\\npython-bits      : 64\\r'
+464,b'\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19042\\r\\nmachine          : AMD64\\r\\nprocessor '
+465,"b'       : Intel64 Family 6 Model 85 Stepping 7, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG     '"
+466,b'        : None\\r\\nLOCALE           : English_United States.1252\\r\\n\\r\\npandas           : 1.5.0.dev0+279.g7651c08230\\r\\nnumpy   '
+467,b'         : 1.22.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 21.2.3\\r\\nsetuptools       : 57'
+468,b'.4.0\\r\\nCython           : None\\r\\npytest           : None\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc       '
+469,b'     : None\\r\\nfeather          : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : None\\r\\nhtml5lib         : None\\r\\npymys'
+470,b'ql          : None\\r\\npsycopg2         : None\\r\\njinja2           : None\\r\\nIPython          : None\\r\\npandas_datareader: None\\r'
+471,b'\\nbs4              : None\\r\\nbottleneck       : None\\r\\nfastparquet      : None\\r\\nfsspec           : None\\r\\ngcsfs            :'
+472,b' None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba            : None\\r\\nnumexpr          : None\\r\\nodfpy            : None\\r\\nopenpyxl  '
+473,b'       : None\\r\\npandas_gbq       : None\\r\\npyarrow          : None\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3f'
+474,b's             : None\\r\\nscipy            : None\\r\\nsqlalchemy       : None\\r\\ntables           : None\\r\\ntabulate         : None'
+475,b'\\r\\nxarray           : None\\r\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n</details>\\r'
+476,"b'\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45809/reactions"",""total_count"":0,""+1"":0,""-1"":0,""la'"
+477,"b'ugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/iss'"
+478,"b'ues/45809/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45808"",""repos'"
+479,"b'itory_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/'"
+480,"b'45808/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45808/comments"",""events_url"":""https:/'"
+481,"b'/api.github.com/repos/pandas-dev/pandas/issues/45808/events"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45808"",""id"":1'"
+482,"b'123486238,""node_id"":""PR_kwDOAA0YD84yC_kj"",""number"":45808,""title"":""bug: fix pd.NA in highlighters"",""user"":{""login"":""attack68"",""id'"
+483,"b'"":24256554,""node_id"":""MDQ6VXNlcjI0MjU2NTU0"",""avatar_url"":""https://avatars.githubusercontent.com/u/24256554?v=4"",""gravatar_id"":""""'"
+484,"b',""url"":""https://api.github.com/users/attack68"",""html_url"":""https://github.com/attack68"",""followers_url"":""https://api.github.com/'"
+485,"b'users/attack68/followers"",""following_url"":""https://api.github.com/users/attack68/following{/other_user}"",""gists_url"":""https://ap'"
+486,"b'i.github.com/users/attack68/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/attack68/starred{/owner}{/repo}"",""subsc'"
+487,"b'riptions_url"":""https://api.github.com/users/attack68/subscriptions"",""organizations_url"":""https://api.github.com/users/attack68/o'"
+488,"b'rgs"",""repos_url"":""https://api.github.com/users/attack68/repos"",""events_url"":""https://api.github.com/users/attack68/events{/priva'"
+489,"b'cy}"",""received_events_url"":""https://api.github.com/users/attack68/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{'"
+490,"b'""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""colo'"
+491,"b'r"":""e10c02"",""default"":false,""description"":null},{""id"":1728592794,""node_id"":""MDU6TGFiZWwxNzI4NTkyNzk0"",""url"":""https://api.github.'"
+492,"b'com/repos/pandas-dev/pandas/labels/Styler"",""name"":""Styler"",""color"":""006b75"",""default"":false,""description"":""conditional formattin'"
+493,"b'g using DataFrame.style""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":{""url"":""https://api.github.c'"
+494,"b'om/repos/pandas-dev/pandas/milestones/93"",""html_url"":""https://github.com/pandas-dev/pandas/milestone/93"",""labels_url"":""https://a'"
+495,"b'pi.github.com/repos/pandas-dev/pandas/milestones/93/labels"",""id"":7593147,""node_id"":""MI_kwDOAA0YD84Ac9y7"",""number"":93,""title"":""1.'"
+496,"b'4.1"",""description"":""on-merge: backport to 1.4.x"",""creator"":{""login"":""simonjayhawkins"",""id"":13159005,""node_id"":""MDQ6VXNlcjEzMTU5M'"
+497,"b'DA1"",""avatar_url"":""https://avatars.githubusercontent.com/u/13159005?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/si'"
+498,"b'monjayhawkins"",""html_url"":""https://github.com/simonjayhawkins"",""followers_url"":""https://api.github.com/users/simonjayhawkins/fol'"
+499,"b'lowers"",""following_url"":""https://api.github.com/users/simonjayhawkins/following{/other_user}"",""gists_url"":""https://api.github.co'"
+500,"b'm/users/simonjayhawkins/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/simonjayhawkins/starred{/owner}{/repo}"",""su'"
+501,"b'bscriptions_url"":""https://api.github.com/users/simonjayhawkins/subscriptions"",""organizations_url"":""https://api.github.com/users/'"
+502,"b'simonjayhawkins/orgs"",""repos_url"":""https://api.github.com/users/simonjayhawkins/repos"",""events_url"":""https://api.github.com/user'"
+503,"b's/simonjayhawkins/events{/privacy}"",""received_events_url"":""https://api.github.com/users/simonjayhawkins/received_events"",""type"":'"
+504,"b'""User"",""site_admin"":false},""open_issues"":8,""closed_issues"":91,""state"":""open"",""created_at"":""2022-01-20T14:43:52Z"",""updated_at"":""2'"
+505,"b'022-02-04T16:59:39Z"",""due_on"":""2022-02-12T08:00:00Z"",""closed_at"":null},""comments"":1,""created_at"":""2022-02-03T19:46:01Z"",""updated'"
+506,"b'_at"":""2022-02-04T17:15:53Z"",""closed_at"":null,""author_association"":""CONTRIBUTOR"",""active_lock_reason"":null,""draft"":false,""pull_re'"
+507,"b'quest"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/pulls/45808"",""html_url"":""https://github.com/pandas-dev/pandas/pull'"
+508,"b'/45808"",""diff_url"":""https://github.com/pandas-dev/pandas/pull/45808.diff"",""patch_url"":""https://github.com/pandas-dev/pandas/pull'"
+509,"b'/45808.patch"",""merged_at"":null},""body"":""- [x] closes #45804\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pan'"
+510,"b'das/issues/45808/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""time'"
+511,"b'line_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45808/timeline"",""performed_via_github_app"":null},{""url"":""https:'"
+512,"b'//api.github.com/repos/pandas-dev/pandas/issues/45807"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels'"
+513,"b'_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45807/labels{/name}"",""comments_url"":""https://api.github.com/repos/p'"
+514,"b'andas-dev/pandas/issues/45807/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45807/events"",""html_'"
+515,"b'url"":""https://github.com/pandas-dev/pandas/issues/45807"",""id"":1123477553,""node_id"":""I_kwDOAA0YD85C9ugx"",""number"":45807,""title"":""'"
+516,"b'BUG: ERROR building development env using Docker "",""user"":{""login"":""NumberPiOso"",""id"":46936498,""node_id"":""MDQ6VXNlcjQ2OTM2NDk4"",'"
+517,"b'""avatar_url"":""https://avatars.githubusercontent.com/u/46936498?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/NumberP'"
+518,"b'iOso"",""html_url"":""https://github.com/NumberPiOso"",""followers_url"":""https://api.github.com/users/NumberPiOso/followers"",""followin'"
+519,"b'g_url"":""https://api.github.com/users/NumberPiOso/following{/other_user}"",""gists_url"":""https://api.github.com/users/NumberPiOso/g'"
+520,"b'ists{/gist_id}"",""starred_url"":""https://api.github.com/users/NumberPiOso/starred{/owner}{/repo}"",""subscriptions_url"":""https://api'"
+521,"b'.github.com/users/NumberPiOso/subscriptions"",""organizations_url"":""https://api.github.com/users/NumberPiOso/orgs"",""repos_url"":""ht'"
+522,"b'tps://api.github.com/users/NumberPiOso/repos"",""events_url"":""https://api.github.com/users/NumberPiOso/events{/privacy}"",""received'"
+523,"b'_events_url"":""https://api.github.com/users/NumberPiOso/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,'"
+524,"b'""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02""'"
+525,"b',""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/p'"
+526,"b'andas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not'"
+527,"b' been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comment'"
+528,"b's"":0,""created_at"":""2022-02-03T19:35:01Z"",""updated_at"":""2022-02-03T19:35:01Z"",""closed_at"":null,""author_association"":""CONTRIBUTOR""'"
+529,"b',""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been report'"
+530,b'ed.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pan'
+531,b'das.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\ndocker '
+532,"b""build --tag pandas-numberpioso-env .\\r\\n\\r\\nERROR: Command errored out with exit status 1: /opt/conda/bin/python -c 'import io, """
+533,"b'os, sys, setuptools, tokenize; sys.argv[0] = \'\\""\'\\""\'/home/pandas/setup.py\'\\""\'\\""\'; __file__=\'\\""\'\\""\'/home/pandas/setup.py\'\\""\'\\""\';f'"
+534,"b' = getattr(tokenize, \'\\""\'\\""\'open\'\\""\'\\""\', open)(__file__) if os.path.exists(__file__) else io.StringIO(\'\\""\'\\""\'from setuptools imp'"
+535,"b'ort setup; setup()\'\\""\'\\""\');code = f.read().replace(\'\\""\'\\""\'\\\\r\\\\n\'\\""\'\\""\', \'\\""\'\\""\'\\\\n\'\\""\'\\""\');f.close();exec(compile(code, __file_'"
+536,"b'_, \'\\""\'\\""\'exec\'\\""\'\\""\'))\' develop --no-deps Check the logs for full command output.\\r\\n\\r\\n\\r\\n<details>\\r\\n  Running setup.py de'"
+537,"b""velop for pandas\\r\\n    ERROR: Command errored out with exit status 1:\\r\\n     command: /opt/conda/bin/python -c 'import io, os,"""
+538,"b' sys, setuptools, tokenize; sys.argv[0] = \'\\""\'\\""\'/home/pandas/setup.py\'\\""\'\\""\'; __file__=\'\\""\'\\""\'/home/pandas/setup.py\'\\""\'\\""\';f = '"
+539,"b'getattr(tokenize, \'\\""\'\\""\'open\'\\""\'\\""\', open)(__file__) if os.path.exists(__file__) else io.StringIO(\'\\""\'\\""\'from setuptools import'"
+540,"b' setup; setup()\'\\""\'\\""\');code = f.read().replace(\'\\""\'\\""\'\\\\r\\\\n\'\\""\'\\""\', \'\\""\'\\""\'\\\\n\'\\""\'\\""\');f.close();exec(compile(code, __file__, '"
+541,"b'\'\\""\'\\""\'exec\'\\""\'\\""\'))\' develop --no-deps\\r\\n         cwd: /home/pandas/\\r\\n    Complete output (25 lines):\\r\\n    running develop'"
+542,b'\\r\\n    running egg_info\\r\\n    writing pandas.egg-info/PKG-INFO\\r\\n    writing dependency_links to pandas.egg-info/dependency_l'
+543,b'inks.txt\\r\\n    writing entry points to pandas.egg-info/entry_points.txt\\r\\n    writing requirements to pandas.egg-info/requires'
+544,"b"".txt\\r\\n    writing top-level names to pandas.egg-info/top_level.txt\\r\\n    reading manifest file 'pandas.egg-info/SOURCES.txt'\\"""
+545,"b""r\\n    reading manifest template 'MANIFEST.in'\\r\\n    /tmp/pip-build-env-lkhctcw3/overlay/lib/python3.8/site-packages/setuptools"""
+546,b'/command/easy_install.py:157: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other sta'
+547,b'ndards-based tools.\\r\\n      warnings.warn(\\r\\n    /tmp/pip-build-env-lkhctcw3/overlay/lib/python3.8/site-packages/setuptools/co'
+548,b'mmand/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based t'
+549,"b""ools.\\r\\n      warnings.warn(\\r\\n    no previously-included directories found matching 'doc/build'\\r\\n    warning: no previously"""
+550,"b""-included files matching '*~' found anywhere in distribution\\r\\n    warning: no previously-included files matching '.DS_Store' f"""
+551,"b""ound anywhere in distribution\\r\\n    warning: no previously-included files matching '#*' found anywhere in distribution\\r\\n    w"""
+552,"b""arning: no previously-included files matching '*.py[ocd]' found anywhere in distribution\\r\\n    adding license file 'LICENSE'\\r\\"""
+553,"b""n    running build_ext\\r\\n    building 'pandas._libs.algos' extension\\r\\n    /opt/conda/compiler_compat/ld: cannot find /lib64/l"""
+554,b'ibpthread.so.0\\r\\n    /opt/conda/compiler_compat/ld: cannot find /usr/lib64/libpthread_nonshared.a\\r\\n    collect2: error: ld re'
+555,"b""turned 1 exit status\\r\\n    error: command '/opt/conda/bin/gcc' failed with exit code 1\\r\\n    ---------------------------------"""
+556,b'-------\\r\\n</details>\\n```\\n\\n\\n### Issue Description\\n\\nLast command  `python -m pip install -e . ` at the Dockerfile fails:\\r\\'
+557,b'n\\r\\nhttps://github.com/pandas-dev/pandas/blob/5c757e9c4cf6a74fabfa1983dcd72b4759a88e5f/Dockerfile#L42-L48\\r\\n\\r\\nRunning manual'
+558,b'ly those lines at docker image is successful until we arrive at this one\\r\\n `python -m pip install -e . `\\r\\n\\n\\n### Expected B'
+559,b'ehavior\\n\\nI would expect that the image should be successfully built\\r\\n\\r\\n```bash\\r\\n> docker build --tag pandas-numberpioso-'
+560,b'env\\r\\nSuccessfully built a3c5533304a3\\r\\nSuccessfully tagged pandas-numberpioso-env:latest\\r\\n```\\n\\n### Installed Versions\\n\\n'
+561,b'<details>\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : 5c757e9c4cf6a74fabfa1983dcd72b4759a88e5f\\r\\npython  '
+562,b'         : 3.8.12.final.0\\r\\npython-bits      : 64\\r\\nOS               : Linux\\r\\nOS-release       : 5.13.0-28-generic\\r\\nVersio'
+563,b'n          : #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022\\r\\nmachine          : x86_64\\r\\nprocessor        : x86_64\\r\\nby'
+564,b'teorder        : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE           : en_US.UTF-8\\r\\n\\r\\npa'
+565,b'ndas           : 1.5.0.dev0+277.g5c757e9c4c.dirty\\r\\nnumpy            : 1.19.4\\r\\npytz             : 2021.3\\r\\ndateutil         '
+566,b': 2.8.2\\r\\npip              : 21.3.1\\r\\nsetuptools       : 59.8.0\\r\\nCython           : 0.29.26\\r\\npytest           : 6.2.5\\r\\nh'
+567,b'ypothesis       : 6.36.0\\r\\nsphinx           : 4.4.0\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwriter       :'
+568,b' 3.0.2\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib         : 1.1\\r\\npymysql          : None\\r\\npsycopg2         : None\\r\\njinja2    '
+569,b'       : 2.11.3\\r\\nIPython          : 8.0.1\\r\\npandas_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck       : 1.3.2\\'
+570,b'r\\nfastparquet      : 0.7.2\\r\\nfsspec           : 2021.11.0\\r\\ngcsfs            : 2021.11.0\\r\\nmatplotlib       : 3.5.1\\r\\nnumba'
+571,b'            : 0.55.0\\r\\nnumexpr          : 2.8.0\\r\\nodfpy            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : No'
+572,b'ne\\r\\npyarrow          : 6.0.1\\r\\npyreadstat       : 1.1.4\\r\\npyxlsb           : None\\r\\ns3fs             : 2021.11.0\\r\\nscipy  '
+573,b'          : 1.7.3\\r\\nsqlalchemy       : 1.4.30\\r\\ntables           : 3.6.1\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.1'
+574,"b'8.2\\r\\nxlrd             : 2.0.1\\r\\nxlwt             : 1.3.0\\r\\nzstandard        : None\\r\\n\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""'"
+575,"b'url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45807/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,'"
+576,"b'""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45807/timeline'"
+577,"b'"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45806"",""repository_url"":""https:'"
+578,"b'//api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45806/labels{/name'"
+579,"b'}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45806/comments"",""events_url"":""https://api.github.com/re'"
+580,"b'pos/pandas-dev/pandas/issues/45806/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45806"",""id"":1123455893,""node_'"
+581,"b'id"":""I_kwDOAA0YD85C9pOV"",""number"":45806,""title"":""BUG: Cannot slice index using boolean type series"",""user"":{""login"":""ChiQiao"",""i'"
+582,"b'd"":35905338,""node_id"":""MDQ6VXNlcjM1OTA1MzM4"",""avatar_url"":""https://avatars.githubusercontent.com/u/35905338?v=4"",""gravatar_id"":""'"
+583,"b'"",""url"":""https://api.github.com/users/ChiQiao"",""html_url"":""https://github.com/ChiQiao"",""followers_url"":""https://api.github.com/u'"
+584,"b'sers/ChiQiao/followers"",""following_url"":""https://api.github.com/users/ChiQiao/following{/other_user}"",""gists_url"":""https://api.g'"
+585,"b'ithub.com/users/ChiQiao/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/ChiQiao/starred{/owner}{/repo}"",""subscripti'"
+586,"b'ons_url"":""https://api.github.com/users/ChiQiao/subscriptions"",""organizations_url"":""https://api.github.com/users/ChiQiao/orgs"",""r'"
+587,"b'epos_url"":""https://api.github.com/users/ChiQiao/repos"",""events_url"":""https://api.github.com/users/ChiQiao/events{/privacy}"",""rec'"
+588,"b'eived_events_url"":""https://api.github.com/users/ChiQiao/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811'"
+589,"b',""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02'"
+590,"b'"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/'"
+591,"b'pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has no'"
+592,"b't been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""commen'"
+593,"b'ts"":0,""created_at"":""2022-02-03T19:10:15Z"",""updated_at"":""2022-02-03T19:10:15Z"",""closed_at"":null,""author_association"":""NONE"",""acti'"
+594,"b've_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\'"
+595,b'n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n'
+596,b'\\n- [ ] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimport pandas'
+597,"b' as pd\\r\\ns = pd.Series([True, False, pd.NA], dtype=\\""boolean\\"")\\r\\ns.index[s]\\n```\\n\\n\\n### Issue Description\\n\\nGet the follow'"
+598,"b""ing error: `ValueError: cannot convert to 'bool'-dtype NumPy array with missing values. Specify an appropriate 'na_value' for th"""
+599,b'is dtype.`\\n\\n### Expected Behavior\\n\\nReturns `pd.Int64Index([0])`\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERS'
+600,b'IONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.9.10.final.0\\r'
+601,b'\\npython-bits      : 64\\r\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19043\\r\\nmachine      '
+602,"b'    : AMD64\\r\\nprocessor        : Intel64 Family 6 Model 142 Stepping 10, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL   '"
+603,b'        : None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE           : English_United States.1252\\r\\n\\r\\npandas           : 1.4.'
+604,b'0\\r\\nnumpy            : 1.22.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 22.0.2\\r\\nsetuptoo'
+605,b'ls       : 59.8.0\\r\\nCython           : None\\r\\npytest           : 6.2.5\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r'
+606,b'\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwriter       : 3.0.2\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib        '
+607,b' : None\\r\\npymysql          : 1.0.2\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.3\\r\\nIPython          : 7.30.1\\r\\npanda'
+608,b's_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck       : None\\r\\nfastparquet      : 0.8.0\\r\\nfsspec           : 202'
+609,b'1.11.1\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba            : None\\r\\nnumexpr          : 2.7.3\\r\\nodfpy   '
+610,b'         : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npyarrow          : 3.0.0\\r\\npyreadstat       : None\\r\\'
+611,b'npyxlsb           : None\\r\\ns3fs             : 0.4.2\\r\\nscipy            : 1.7.3\\r\\nsqlalchemy       : 1.4.31\\r\\ntables         '
+612,b'  : 3.7.0\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.21.1\\r\\nxlrd             : 2.0.1\\r\\nxlwt             : None\\r\\nzst'
+613,"b'andard        : None\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45806/reac'"
+614,"b'tions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://ap'"
+615,"b'i.github.com/repos/pandas-dev/pandas/issues/45806/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repo'"
+616,"b's/pandas-dev/pandas/issues/45804"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.gi'"
+617,"b'thub.com/repos/pandas-dev/pandas/issues/45804/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issu'"
+618,"b'es/45804/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45804/events"",""html_url"":""https://github.'"
+619,"b'com/pandas-dev/pandas/issues/45804"",""id"":1123440142,""node_id"":""I_kwDOAA0YD85C9lYO"",""number"":45804,""title"":""BUG: `styler` builtin'"
+620,"b' highlighters and `pd.NA` interaction"",""user"":{""login"":""attack68"",""id"":24256554,""node_id"":""MDQ6VXNlcjI0MjU2NTU0"",""avatar_url"":""h'"
+621,"b'ttps://avatars.githubusercontent.com/u/24256554?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/attack68"",""html_url"":""'"
+622,"b'https://github.com/attack68"",""followers_url"":""https://api.github.com/users/attack68/followers"",""following_url"":""https://api.gith'"
+623,"b'ub.com/users/attack68/following{/other_user}"",""gists_url"":""https://api.github.com/users/attack68/gists{/gist_id}"",""starred_url"":'"
+624,"b'""https://api.github.com/users/attack68/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/attack68/subscr'"
+625,"b'iptions"",""organizations_url"":""https://api.github.com/users/attack68/orgs"",""repos_url"":""https://api.github.com/users/attack68/rep'"
+626,"b'os"",""events_url"":""https://api.github.com/users/attack68/events{/privacy}"",""received_events_url"":""https://api.github.com/users/at'"
+627,"b'tack68/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://'"
+628,"b'api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":28223'"
+629,"b'42,""node_id"":""MDU6TGFiZWwyODIyMzQy"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Missing-data"",""name"":""Missing-d'"
+630,"b'ata"",""color"":""d7e102"",""default"":false,""description"":""np.nan, pd.NaT, pd.NA, dropna, isnull, interpolate""},{""id"":1728592794,""node'"
+631,"b'_id"":""MDU6TGFiZWwxNzI4NTkyNzk0"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Styler"",""name"":""Styler"",""color"":""00'"
+632,"b'6b75"",""default"":false,""description"":""conditional formatting using DataFrame.style""}],""state"":""open"",""locked"":false,""assignee"":nu'"
+633,"b'll,""assignees"":[],""milestone"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/milestones/93"",""html_url"":""https://github.c'"
+634,"b'om/pandas-dev/pandas/milestone/93"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/milestones/93/labels"",""id"":75931'"
+635,"b'47,""node_id"":""MI_kwDOAA0YD84Ac9y7"",""number"":93,""title"":""1.4.1"",""description"":""on-merge: backport to 1.4.x"",""creator"":{""login"":""s'"
+636,"b'imonjayhawkins"",""id"":13159005,""node_id"":""MDQ6VXNlcjEzMTU5MDA1"",""avatar_url"":""https://avatars.githubusercontent.com/u/13159005?v='"
+637,"b'4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/simonjayhawkins"",""html_url"":""https://github.com/simonjayhawkins"",""follow'"
+638,"b'ers_url"":""https://api.github.com/users/simonjayhawkins/followers"",""following_url"":""https://api.github.com/users/simonjayhawkins/'"
+639,"b'following{/other_user}"",""gists_url"":""https://api.github.com/users/simonjayhawkins/gists{/gist_id}"",""starred_url"":""https://api.gi'"
+640,"b'thub.com/users/simonjayhawkins/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/simonjayhawkins/subscri'"
+641,"b'ptions"",""organizations_url"":""https://api.github.com/users/simonjayhawkins/orgs"",""repos_url"":""https://api.github.com/users/simonj'"
+642,"b'ayhawkins/repos"",""events_url"":""https://api.github.com/users/simonjayhawkins/events{/privacy}"",""received_events_url"":""https://api'"
+643,"b'.github.com/users/simonjayhawkins/received_events"",""type"":""User"",""site_admin"":false},""open_issues"":8,""closed_issues"":91,""state"":'"
+644,"b'""open"",""created_at"":""2022-01-20T14:43:52Z"",""updated_at"":""2022-02-04T16:59:39Z"",""due_on"":""2022-02-12T08:00:00Z"",""closed_at"":null}'"
+645,"b',""comments"":0,""created_at"":""2022-02-03T18:51:40Z"",""updated_at"":""2022-02-04T15:53:23Z"",""closed_at"":null,""author_association"":""CON'"
+646,"b'TRIBUTOR"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already be'"
+647,b'en reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.htm'
+648,b'l) of pandas.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python'
+649,b'\\n.\\n```\\n\\n\\n### Issue Description\\n\\nStyler has some defaults for display of ints and float. When including missing data this '
+650,b'becomes a bit unintuitive:\\r\\n\\r\\nWhen using `None` or `np.nan` the `int` column is cast to `float` and precision takes over:\\r\\'
+651,"b'n\\r\\n```python\\r\\ndf = DataFrame([[1, 2], [3, None]])\\r\\ndf.style.highlight_max().highlight_null()\\r\\n```\\r\\n![Screen Shot 2022-'"
+652,b'02-03 at 19 27 25](https://user-images.githubusercontent.com/24256554/152405679-0cc694b1-f9c6-4c88-a0f7-ef41b49c2591.png)\\r\\n\\r\\'
+653,b'nThis can be solved here by using `pd.NA` but this has the problem of casting the `int` col to `object` which has other implicat'
+654,"b""ions, and dataframes probably don't want to be created like this in future:\\r\\n\\r\\n```python\\r\\ndf = DataFrame([[1, 2], [3, pd.N"""
+655,b'A]])\\r\\ndf.style.highlight_max().highlight_null()\\r\\n```\\r\\n![Screen Shot 2022-02-03 at 19 31 25](https://user-images.githubuser'
+656,b'content.com/24256554/152406447-33467c93-366f-44d2-96cf-4968199765d5.png)\\r\\n\\r\\nIf instead we use the extension dtypes the colum'
+657,"b'n dtypes are consistently `int` but then the styling functions fail:\\r\\n\\r\\n```python\\r\\ndf = DataFrame([[1, 2], [3, pd.NA]], dt'"
+658,"b'ype=\\""Int64\\"")\\r\\ndf.style.highlight_max().highlight_null()\\r\\n\\r\\n<TypeError: boolean value of NA is ambiguous>\\r\\n```\\r\\n\\n\\n#'"
+659,b'## Expected Behavior\\n\\nIt is reasonably simple to code a check for `pd.NA` in booleans and reallow the styling behaviour.\\r\\n\\r'
+660,b'\\nMight this be an appropriate solution or will pandas change the way `pd.NA` is interpreted in future?\\n\\n### Installed Version'
+661,"b's\\n\\n."",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45804/reactions"",""total_count"":0,""+1"":0,""-1"":0'"
+662,"b',""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas'"
+663,"b'/issues/45804/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45803"",""r'"
+664,"b'epository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/iss'"
+665,"b'ues/45803/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45803/comments"",""events_url"":""htt'"
+666,"b'ps://api.github.com/repos/pandas-dev/pandas/issues/45803/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45803"",'"
+667,"b'""id"":1123395837,""node_id"":""I_kwDOAA0YD85C9aj9"",""number"":45803,""title"":""BUG: arithmetic operations disobey array priority"",""user""'"
+668,"b':{""login"":""FabianHofmann"",""id"":19226431,""node_id"":""MDQ6VXNlcjE5MjI2NDMx"",""avatar_url"":""https://avatars.githubusercontent.com/u/1'"
+669,"b'9226431?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/FabianHofmann"",""html_url"":""https://github.com/FabianHofmann"",""'"
+670,"b'followers_url"":""https://api.github.com/users/FabianHofmann/followers"",""following_url"":""https://api.github.com/users/FabianHofman'"
+671,"b'n/following{/other_user}"",""gists_url"":""https://api.github.com/users/FabianHofmann/gists{/gist_id}"",""starred_url"":""https://api.gi'"
+672,"b'thub.com/users/FabianHofmann/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/FabianHofmann/subscriptio'"
+673,"b'ns"",""organizations_url"":""https://api.github.com/users/FabianHofmann/orgs"",""repos_url"":""https://api.github.com/users/FabianHofman'"
+674,"b'n/repos"",""events_url"":""https://api.github.com/users/FabianHofmann/events{/privacy}"",""received_events_url"":""https://api.github.co'"
+675,"b'm/users/FabianHofmann/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",'"
+676,"b'""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":nu'"
+677,"b'll},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20T'"
+678,"b'riage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team m'"
+679,"b'ember""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":1,""created_at"":""2022-02-03T18:'"
+680,"b'01:42Z"",""updated_at"":""2022-02-04T04:23:55Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### P'"
+681,b'andas version checks\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\n- [X] I have confirmed this bug e'
+682,b'xists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [x] I have confirmed this bug '
+683,b'exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimport pandas as pd\\r\\nimport numpy as np\\r\\n\\r'
+684,"b'\\nclass AlwaysOne(float):\\r\\n\\r\\n    __array_priority__ = 10000\\r\\n    __array_ufunc__ = None\\r\\n\\r\\n    def __rmul__(self, othe'"
+685,"b'r): \\r\\n        return 1\\r\\n\\r\\n    def __mul__(self, other): \\r\\n        return 1\\r\\n    \\r\\none = AlwaysOne()\\r\\n\\r\\n# Test __'"
+686,"b'mul__\\r\\nprint(one * 5) # returns 1\\r\\nprint(one * np.array([5,5])) # returns 1\\r\\nprint(one * pd.Series([5,5])) # returns 1\\r\\n'"
+687,"b'\\r\\n# Test __rmul__\\r\\nprint(5 * one) # returns 1\\r\\nprint(np.array([5,5]) * one) # returns 1\\r\\nprint(pd.Series([5,5]) * one) #'"
+688,b' returns pandas Series filled with ones.\\n```\\n\\n\\n### Issue Description\\n\\nWhen multiplying a pandas.Series or a pandas.DataFra'
+689,"b""me with another object, a comparison of their  `__array_priority__`'s should determine which operation to choose: If the object """
+690,"b'on the left has a higher `__array_priority__` value, the  `__mul__` of this class is executed, if it stands on the right its `__'"
+691,"b'rmul__` operation is executed.  \\r\\n\\r\\nPandas objects (Series & DataFrame) respect this rule however, they determine the output'"
+692,"b' class when they stand left in the multiplication with an object of a higher `__array_priority__`. Note, this is not not the cas'"
+693,"b'e for numpy arrays. \\n\\n### Expected Behavior\\n\\nIf the `__array_priority__` of the other class, which stands on the right side '"
+694,"b'in the multiplication, is higher, the other class should determine the multiplication operation and thus the class of the result'"
+695,b'. \\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nNSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfe'
+696,b'f8550f93ace7849b00046ee\\r\\npython           : 3.9.9.final.0\\r\\npython-bits      : 64\\r\\nOS               : Linux\\r\\nOS-release  '
+697,b'     : 5.13.0-27-generic\\r\\nVersion          : #29~20.04.1-Ubuntu SMP Fri Jan 14 00:32:30 UTC 2022\\r\\nmachine          : x86_64\\'
+698,b'r\\nprocessor        : x86_64\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE'
+699,b'           : en_US.UTF-8\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.21.5\\r\\npytz             : 2021.3\\r\\ndateutil  '
+700,b'       : 2.8.2\\r\\npip              : 21.3.1\\r\\nsetuptools       : 60.5.0\\r\\nCython           : None\\r\\npytest           : 6.2.5\\'
+701,b'r\\nhypothesis       : None\\r\\nsphinx           : 4.3.2\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwriter      '
+702,b' : None\\r\\nlxml.etree       : None\\r\\nhtml5lib         : None\\r\\npymysql          : None\\r\\npsycopg2         : None\\r\\njinja2   '
+703,b'        : 3.0.3\\r\\nIPython          : 7.29.0\\r\\npandas_datareader: None\\r\\nbs4              : None\\r\\nbottleneck       : 1.3.2\\r'
+704,b'\\nfastparquet      : None\\r\\nfsspec           : 2022.01.0\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba       '
+705,b'     : 0.55.0\\r\\nnumexpr          : 2.8.1\\r\\nodfpy            : None\\r\\nopenpyxl         : None\\r\\npandas_gbq       : None\\r\\npy'
+706,b'arrow          : None\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : None\\r\\nscipy            : 1.7'
+707,b'.3\\r\\nsqlalchemy       : None\\r\\ntables           : 3.7.0\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.20.2\\r\\nxlrd      '
+708,"b'       : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.co'"
+709,"b'm/repos/pandas-dev/pandas/issues/45803/reactions"",""total_count"":1,""+1"":1,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""roc'"
+710,"b'ket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45803/timeline"",""performed_via_github_app'"
+711,"b'"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45802"",""repository_url"":""https://api.github.com/repos/pand'"
+712,"b'as-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45802/labels{/name}"",""comments_url"":""https://'"
+713,"b'api.github.com/repos/pandas-dev/pandas/issues/45802/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issue'"
+714,"b's/45802/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45802"",""id"":1123368164,""node_id"":""I_kwDOAA0YD85C9Tzk"",""n'"
+715,"b'umber"":45802,""title"":""BUG: Type error in groupby.transform(interpolate)"",""user"":{""login"":""hliatrussellinvestments"",""id"":70167716'"
+716,"b',""node_id"":""MDQ6VXNlcjcwMTY3NzE2"",""avatar_url"":""https://avatars.githubusercontent.com/u/70167716?v=4"",""gravatar_id"":"""",""url"":""ht'"
+717,"b'tps://api.github.com/users/hliatrussellinvestments"",""html_url"":""https://github.com/hliatrussellinvestments"",""followers_url"":""htt'"
+718,"b'ps://api.github.com/users/hliatrussellinvestments/followers"",""following_url"":""https://api.github.com/users/hliatrussellinvestmen'"
+719,"b'ts/following{/other_user}"",""gists_url"":""https://api.github.com/users/hliatrussellinvestments/gists{/gist_id}"",""starred_url"":""htt'"
+720,"b'ps://api.github.com/users/hliatrussellinvestments/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/hlia'"
+721,"b'trussellinvestments/subscriptions"",""organizations_url"":""https://api.github.com/users/hliatrussellinvestments/orgs"",""repos_url"":""'"
+722,"b'https://api.github.com/users/hliatrussellinvestments/repos"",""events_url"":""https://api.github.com/users/hliatrussellinvestments/e'"
+723,"b'vents{/privacy}"",""received_events_url"":""https://api.github.com/users/hliatrussellinvestments/received_events"",""type"":""User"",""sit'"
+724,"b'e_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/lab'"
+725,"b'els/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw""'"
+726,"b',""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":f'"
+727,"b'alse,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""a'"
+728,"b'ssignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-03T17:31:52Z"",""updated_at"":""2022-02-03T17:31:52Z"",""closed_at"":n'"
+729,"b'ull,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this is'"
+730,b'sue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/d'
+731,b'ocs/whatsnew/index.html) of pandas.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducibl'
+732,b'e Example\\n\\n```python\\nimport numpy as np\\r\\nimport pandas as pd\\r\\n\\r\\nnp.random.seed(500)\\r\\ntest_df = pd.DataFrame({\\r\\n    '
+733,"b""'a': np.random.randint(low=0, high=1000, size=10000),\\r\\n    'b': np.random.choice([1, 2, 4, 7, np.nan], size=10000, p=([0.2475]"""
+734,"b"" * 4 + [0.01]))\\r\\n})\\r\\ntest_df.groupby('a').transform(pd.DataFrame.interpolate)\\n```\\n\\n\\n### Issue Description\\n\\nWhen I want"""
+735,b' to interpolation of some columns (column \xe2\x80\x98b\xe2\x80\x99 in example) in a data frame according to some other columns (column \xe2\x80\x98a\xe2\x80\x99 in'
+736,"b' example), I group by the accorded columns (column \xe2\x80\x98a\xe2\x80\x99 in example) and then transform the group using the interpolate method'"
+737,b'. \\r\\nIt worked in version 1.1.1. \\n\\n### Expected Behavior\\n\\nThe nan values in column \xe2\x80\x98b\xe2\x80\x99 should be replaced by interpolat'
+738,b'ed value according to column \xe2\x80\x98a\xe2\x80\x99. \\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\'
+739,b'ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.8.6.final.0\\r\\npython-bits      : 64\\r\\nOS '
+740,b'              : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19041\\r\\nmachine          : AMD64\\r\\nprocessor      '
+741,"b'  : Intel64 Family 6 Model 158 Stepping 13, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG        '"
+742,b'     : None\\r\\nLOCALE           : English_United States.1252\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.19.0\\r\\npytz   '
+743,b'          : 2021.3\\r\\ndateutil         : 2.8.1\\r\\npip              : 21.3.1\\r\\nsetuptools       : 49.2.1\\r\\nCython           : N'
+744,b'one\\r\\npytest           : 5.4.1\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc            : None\\r\\nfeather     '
+745,b'     : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : None\\r\\nhtml5lib         : None\\r\\npymysql          : None\\r\\npsyco'
+746,b'pg2         : None\\r\\njinja2           : 2.11.1\\r\\nIPython          : None\\r\\npandas_datareader: None\\r\\nbs4              : None'
+747,b'\\r\\nbottleneck       : None\\r\\nfastparquet      : None\\r\\nfsspec           : 2021.10.0\\r\\ngcsfs            : None\\r\\nmatplotlib '
+748,b'      : None\\r\\nnumba            : None\\r\\nnumexpr          : None\\r\\nodfpy            : None\\r\\nopenpyxl         : None\\r\\npand'
+749,b'as_gbq       : None\\r\\npyarrow          : None\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : None\\'
+750,b'r\\nscipy            : 1.5.4\\r\\nsqlalchemy       : 1.4.31\\r\\ntables           : None\\r\\ntabulate         : None\\r\\nxarray        '
+751,"b'   : None\\r\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n\\r\\n</details>\\r\\n"",""reactions'"
+752,"b'"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45802/reactions"",""total_count"":1,""+1"":1,""-1"":0,""laugh"":0,""hooray'"
+753,"b'"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45802/time'"
+754,"b'line"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45801"",""repository_url"":""ht'"
+755,"b'tps://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45801/labels{/'"
+756,"b'name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45801/comments"",""events_url"":""https://api.github.co'"
+757,"b'm/repos/pandas-dev/pandas/issues/45801/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45801"",""id"":1123345049,""n'"
+758,"b'ode_id"":""I_kwDOAA0YD85C9OKZ"",""number"":45801,""title"":""BUG: read_csv not applying dtype to index col when dtype is globally specif'"
+759,"b'ied"",""user"":{""login"":""gaow"",""id"":917985,""node_id"":""MDQ6VXNlcjkxNzk4NQ=="",""avatar_url"":""https://avatars.githubusercontent.com/u/9'"
+760,"b'17985?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/gaow"",""html_url"":""https://github.com/gaow"",""followers_url"":""http'"
+761,"b's://api.github.com/users/gaow/followers"",""following_url"":""https://api.github.com/users/gaow/following{/other_user}"",""gists_url"":'"
+762,"b'""https://api.github.com/users/gaow/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/gaow/starred{/owner}{/repo}"",""su'"
+763,"b'bscriptions_url"":""https://api.github.com/users/gaow/subscriptions"",""organizations_url"":""https://api.github.com/users/gaow/orgs"",'"
+764,"b'""repos_url"":""https://api.github.com/users/gaow/repos"",""events_url"":""https://api.github.com/users/gaow/events{/privacy}"",""receive'"
+765,"b'd_events_url"":""https://api.github.com/users/gaow/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_'"
+766,"b'id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""defa'"
+767,"b'ult"":false,""description"":null},{""id"":47229171,""node_id"":""MDU6TGFiZWw0NzIyOTE3MQ=="",""url"":""https://api.github.com/repos/pandas-de'"
+768,"b'v/pandas/labels/IO%20CSV"",""name"":""IO CSV"",""color"":""5319e7"",""default"":false,""description"":""read_csv, to_csv""},{""id"":219960758,""no'"
+769,"b'de_id"":""MDU6TGFiZWwyMTk5NjA3NTg="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Discussion"",""name"":""Needs'"
+770,"b' Discussion"",""color"":""207de5"",""default"":false,""description"":""Requires discussion from core team before further action""}],""state""'"
+771,"b':""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":1,""created_at"":""2022-02-03T17:09:49Z"",""updated'"
+772,"b'_at"":""2022-02-04T12:18:01Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version ch'"
+773,b'ecks\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on the [la'
+774,b'test version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the ma'
+775,b'in branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\n# Not expected behavior: index are still int\\r\\nimport pandas a'
+776,"b's pd\\r\\nfrom io import StringIO\\r\\ndata = \\""1,a\\\\n2,b\\""\\r\\ndf = pd.read_csv(StringIO(data), index_col=0, dtype=str, header=None)'"
+777,b'\\r\\ndf.index\\n```\\n\\n\\n### Issue Description\\n\\nThis is separated from #44632. More discussions on #9435. In version 1.4.0 it do'
+778,"b'es fix the case when dtype is defined for a column specifically:\\r\\n\\r\\n```\\r\\ndf = pd.read_csv(StringIO(data), index_col=0, dty'"
+779,"b'pe={0:str}, header=None)\\r\\n```\\r\\n\\r\\nworks. But not when you specify dtype globally.\\n\\n### Expected Behavior\\n\\nI expect by s'"
+780,"b'pecifying `index_col=0, dtype=str` which requires all columns be `str`, then the first column is also a str and is used as index'"
+781,"b"" as well. With current version of pandas I am not sure what's the alternative implementation for my expected behavior. \\n\\n### I"""
+782,b'nstalled Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cdfef8550f93ac'
+783,b'e7849b00046ee\\r\\npython           : 3.8.5.final.0\\r\\npython-bits      : 64\\r\\nOS               : Linux\\r\\nOS-release       : 5.4'
+784,b'.0-39-generic\\r\\nVersion          : #43-Ubuntu SMP Fri Jun 19 10:28:31 UTC 2020\\r\\nmachine          : x86_64\\r\\nprocessor       '
+785,b' : x86_64\\r\\nbyteorder        : little\\r\\nLC_ALL           : en_US.UTF-8\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE           :'
+786,b' en_US.UTF-8\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.19.5\\r\\npytz             : 2020.5\\r\\ndateutil         : 2.8'
+787,b'.1\\r\\npip              : 20.2.4\\r\\nsetuptools       : 50.3.1.post20201107\\r\\nCython           : None\\r\\npytest           : 6.2.2'
+788,b'\\r\\nhypothesis       : None\\r\\nsphinx           : 4.3.1\\r\\nblosc            : None\\r\\nfeather          : 0.4.1\\r\\nxlsxwriter    '
+789,b'   : None\\r\\nlxml.etree       : 4.6.2\\r\\nhtml5lib         : None\\r\\npymysql          : None\\r\\npsycopg2         : None\\r\\njinja2'
+790,b'           : 2.11.2\\r\\nIPython          : 7.19.0\\r\\npandas_datareader: None\\r\\nbs4              : 4.9.3\\r\\nbottleneck       : No'
+791,b'ne\\r\\nfastparquet      : None\\r\\nfsspec           : 0.8.5\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.3.4\\r\\nnumba       '
+792,b'     : None\\r\\nnumexpr          : 2.7.2\\r\\nodfpy            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npya'
+793,b'rrow          : 0.17.1\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : None\\r\\nscipy            : 1.'
+794,b'6.0\\r\\nsqlalchemy       : 1.3.22\\r\\ntables           : None\\r\\ntabulate         : 0.8.7\\r\\nxarray           : 0.16.2\\r\\nxlrd    '
+795,"b'         : 2.0.1\\r\\nxlwt             : None\\r\\nzstandard        : 0.15.1\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.'"
+796,"b'github.com/repos/pandas-dev/pandas/issues/45801/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""hear'"
+797,"b't"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45801/timeline"",""performed_via_g'"
+798,"b'ithub_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45800"",""repository_url"":""https://api.github.com/r'"
+799,"b'epos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45800/labels{/name}"",""comments_url"":'"
+800,"b'""https://api.github.com/repos/pandas-dev/pandas/issues/45800/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pan'"
+801,"b'das/issues/45800/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45800"",""id"":1123341073,""node_id"":""I_kwDOAA0YD85'"
+802,"b'C9NMR"",""number"":45800,""title"":""BUG: `df.agg` raises Exception on valid function in `df.apply`"",""user"":{""login"":""attack68"",""id"":2'"
+803,"b'4256554,""node_id"":""MDQ6VXNlcjI0MjU2NTU0"",""avatar_url"":""https://avatars.githubusercontent.com/u/24256554?v=4"",""gravatar_id"":"""",""u'"
+804,"b'rl"":""https://api.github.com/users/attack68"",""html_url"":""https://github.com/attack68"",""followers_url"":""https://api.github.com/use'"
+805,"b'rs/attack68/followers"",""following_url"":""https://api.github.com/users/attack68/following{/other_user}"",""gists_url"":""https://api.g'"
+806,"b'ithub.com/users/attack68/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/attack68/starred{/owner}{/repo}"",""subscrip'"
+807,"b'tions_url"":""https://api.github.com/users/attack68/subscriptions"",""organizations_url"":""https://api.github.com/users/attack68/orgs'"
+808,"b'"",""repos_url"":""https://api.github.com/users/attack68/repos"",""events_url"":""https://api.github.com/users/attack68/events{/privacy}'"
+809,"b'"",""received_events_url"":""https://api.github.com/users/attack68/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id'"
+810,"b'"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":'"
+811,"b'""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com'"
+812,"b'/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that'"
+813,"b' has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,'"
+814,"b'""comments"":1,""created_at"":""2022-02-03T17:06:44Z"",""updated_at"":""2022-02-03T20:01:48Z"",""closed_at"":null,""author_association"":""CONT'"
+815,"b'RIBUTOR"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already bee'"
+816,b'n reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html'
+817,b') of pandas.\\n\\n- [X] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\'
+818,b'n.\\n```\\n\\n\\n### Issue Description\\n\\nIf the following `agg` is performed it currently works but gives a warning:\\r\\n\\r\\n```pyth'
+819,"b'on\\r\\ndf = pd.DataFrame({\\r\\n    \\""A\\"": Series((1000, 2000), dtype=int),\\r\\n    \\""B\\"": Series((1000, 2000), dtype=np.int64),\\r\\n'"
+820,"b'    \\""C\\"": Series([\\""a\\"", \\""b\\""]),\\r\\n})\\r\\n\\r\\ndf.agg([\\""mean\\"", \\""sum\\""])\\r\\n           A       B    C\\r\\nmean  1500.0  1500.0'"
+821,"b""  NaN\\r\\nsum   3000.0  3000.0   ab\\r\\n```\\r\\n\\r\\n`FutureWarning: ['C'] did not aggregate successfully. If any error is raised th"""
+822,"b'is will raise in a future version of pandas. Drop these columns/ops to avoid this warning. print(df.agg([\\""mean\\"", \\""sum\\""]))`\\r'"
+823,"b""\\n\\r\\nHowever, I do not want to:\\r\\n\\r\\n - drop column `'C'`, because there is at least one op, `sum`, which produces a valid re"""
+824,"b""sults for that column.\\r\\n - drop op `'mean'` because there is at least one column, `'A', 'B'`, which produce valid results for """
+825,b'that op. \\r\\n\\r\\nI tried to design a function which would error trap this:\\r\\n\\r\\n```python\\r\\ndef mean2(s:Series):\\r\\n    try:\\'
+826,"b'r\\n        ret = s.mean()\\r\\n    except Exception:\\r\\n        ret = pd.NA\\r\\n    return ret\\r\\n\\r\\ndf.agg([mean2, \\""sum\\""])\\r\\n<'"
+827,"b'ValueError: cannot combine transform and aggregation operations>\\r\\n```\\r\\n\\r\\nOddly, this works with `apply` which is what the '"
+828,"b'`agg` docs give guidance on:\\r\\n\\r\\n```python\\r\\ndf.apply(mean2, axis=0)\\r\\nA    1500.0\\r\\nB    1500.0\\r\\nC      <NA>\\r\\ndtype: '"
+829,"b'object\\r\\n```\\r\\n\\r\\nSo what\'s the solution here?\\n\\n### Expected Behavior\\n\\n.\\n\\n### Installed Versions\\n\\n.\\r\\n"",""reactions"":'"
+830,"b'{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45800/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":'"
+831,"b'0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45800/timeli'"
+832,"b'ne"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45798"",""repository_url"":""http'"
+833,"b's://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45798/labels{/na'"
+834,"b'me}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45798/comments"",""events_url"":""https://api.github.com/'"
+835,"b'repos/pandas-dev/pandas/issues/45798/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45798"",""id"":1123234911,""nod'"
+836,"b'e_id"":""I_kwDOAA0YD85C8zRf"",""number"":45798,""title"":""BUG: `astype(\\""timedelta64[ns]\\"")` fails when `np.nan` is included"",""user"":{""'"
+837,"b'login"":""ChiQiao"",""id"":35905338,""node_id"":""MDQ6VXNlcjM1OTA1MzM4"",""avatar_url"":""https://avatars.githubusercontent.com/u/35905338?v'"
+838,"b'=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/ChiQiao"",""html_url"":""https://github.com/ChiQiao"",""followers_url"":""https'"
+839,"b'://api.github.com/users/ChiQiao/followers"",""following_url"":""https://api.github.com/users/ChiQiao/following{/other_user}"",""gists_'"
+840,"b'url"":""https://api.github.com/users/ChiQiao/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/ChiQiao/starred{/owner}{'"
+841,"b'/repo}"",""subscriptions_url"":""https://api.github.com/users/ChiQiao/subscriptions"",""organizations_url"":""https://api.github.com/use'"
+842,"b'rs/ChiQiao/orgs"",""repos_url"":""https://api.github.com/users/ChiQiao/repos"",""events_url"":""https://api.github.com/users/ChiQiao/eve'"
+843,"b'nts{/privacy}"",""received_events_url"":""https://api.github.com/users/ChiQiao/received_events"",""type"":""User"",""site_admin"":false},""l'"
+844,"b'abels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""B'"
+845,"b'ug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://ap'"
+846,"b'i.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description""'"
+847,"b':""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""mile'"
+848,"b'stone"":null,""comments"":0,""created_at"":""2022-02-03T15:36:47Z"",""updated_at"":""2022-02-03T15:36:47Z"",""closed_at"":null,""author_associ'"
+849,"b'ation"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not alread'"
+850,b'y been reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index'
+851,b'.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```py'
+852,"b'thon\\nimport pandas as pd\\r\\npd.Series([1, np.nan]).astype(\\""timedelta64[ns]\\"")\\n```\\n\\n\\n### Issue Description\\n\\nGet an error '"
+853,b'`IntCastingNaNError: Cannot convert non-finite values (NA or inf) to integer`\\n\\n### Expected Behavior\\n\\nCast `np.nan` as `pd.N'
+854,b'aT`\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n------------------\\r\\ncommit           : bb1f651536508cd'
+855,b'fef8550f93ace7849b00046ee\\r\\npython           : 3.9.10.final.0\\r\\npython-bits      : 64\\r\\nOS               : Windows\\r\\nOS-rele'
+856,b'ase       : 10\\r\\nVersion          : 10.0.19043\\r\\nmachine          : AMD64\\r\\nprocessor        : Intel64 Family 6 Model 142 Ste'
+857,"b'pping 10, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE      '"
+858,b'     : English_United States.1252\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy            : 1.22.1\\r\\npytz             : 2021.3\\r\\nd'
+859,b'ateutil         : 2.8.2\\r\\npip              : 22.0.2\\r\\nsetuptools       : 59.8.0\\r\\nCython           : None\\r\\npytest          '
+860,b' : 6.2.5\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwrit'
+861,b'er       : 3.0.2\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib         : None\\r\\npymysql          : 1.0.2\\r\\npsycopg2         : None\\r'
+862,b'\\njinja2           : 3.0.3\\r\\nIPython          : 7.30.1\\r\\npandas_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck   '
+863,b'    : None\\r\\nfastparquet      : 0.8.0\\r\\nfsspec           : 2021.11.1\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.5.1\\r\\'
+864,b'nnumba            : None\\r\\nnumexpr          : 2.7.3\\r\\nodfpy            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       '
+865,b': None\\r\\npyarrow          : 3.0.0\\r\\npyreadstat       : None\\r\\npyxlsb           : None\\r\\ns3fs             : 0.4.2\\r\\nscipy   '
+866,b'         : 1.7.3\\r\\nsqlalchemy       : 1.4.31\\r\\ntables           : 3.7.0\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.21'
+867,"b'.1\\r\\nxlrd             : 2.0.1\\r\\nxlwt             : None\\r\\nzstandard        : None\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""'"
+868,"b'https://api.github.com/repos/pandas-dev/pandas/issues/45798/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confu'"
+869,"b'sed"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45798/timeline"",""per'"
+870,"b'formed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45797"",""repository_url"":""https://api.'"
+871,"b'github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45797/labels{/name}"",""co'"
+872,"b'mments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45797/comments"",""events_url"":""https://api.github.com/repos/pa'"
+873,"b'ndas-dev/pandas/issues/45797/events"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45797"",""id"":1122630691,""node_id"":""PR_'"
+874,"b'kwDOAA0YD84yALfv"",""number"":45797,""title"":""Test series replace different numpy int"",""user"":{""login"":""weikhor"",""id"":36619387,""node'"
+875,"b'_id"":""MDQ6VXNlcjM2NjE5Mzg3"",""avatar_url"":""https://avatars.githubusercontent.com/u/36619387?v=4"",""gravatar_id"":"""",""url"":""https://'"
+876,"b'api.github.com/users/weikhor"",""html_url"":""https://github.com/weikhor"",""followers_url"":""https://api.github.com/users/weikhor/foll'"
+877,"b'owers"",""following_url"":""https://api.github.com/users/weikhor/following{/other_user}"",""gists_url"":""https://api.github.com/users/w'"
+878,"b'eikhor/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/weikhor/starred{/owner}{/repo}"",""subscriptions_url"":""https:/'"
+879,"b'/api.github.com/users/weikhor/subscriptions"",""organizations_url"":""https://api.github.com/users/weikhor/orgs"",""repos_url"":""https:'"
+880,"b'//api.github.com/users/weikhor/repos"",""events_url"":""https://api.github.com/users/weikhor/events{/privacy}"",""received_events_url""'"
+881,"b':""https://api.github.com/users/weikhor/received_events"",""type"":""User"",""site_admin"":false},""labels"":[],""state"":""open"",""locked"":fa'"
+882,"b'lse,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-03T04:08:23Z"",""updated_at"":""2022-02-04T02'"
+883,"b':19:27Z"",""closed_at"":null,""author_association"":""CONTRIBUTOR"",""active_lock_reason"":null,""draft"":false,""pull_request"":{""url"":""http'"
+884,"b's://api.github.com/repos/pandas-dev/pandas/pulls/45797"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45797"",""diff_url"":'"
+885,"b'""https://github.com/pandas-dev/pandas/pull/45797.diff"",""patch_url"":""https://github.com/pandas-dev/pandas/pull/45797.patch"",""merg'"
+886,"b'ed_at"":null},""body"":""- [\xe2\x9c\x94 ] closes #45311\\r\\n- [\xe2\x9c\x94] [Tests added and passed](https://pandas.pydata.org/pandas-docs/dev/develo'"
+887,b'pment/contributing_codebase.html#writing-tests) if fixing a bug or adding a new feature\\r\\n- [\xe2\x9c\x94] All [code checks passed](http'
+888,b's://pandas.pydata.org/pandas-docs/dev/development/contributing_codebase.html#pre-commit).\\r\\n- [X] Added an entry in the latest '
+889,"b'`doc/source/whatsnew/vX.X.X.rst` file if fixing a bug or adding a new feature.\\r\\n"",""reactions"":{""url"":""https://api.github.com/r'"
+890,"b'epos/pandas-dev/pandas/issues/45797/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket'"
+891,"b'"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45797/timeline"",""performed_via_github_app"":n'"
+892,"b'ull},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45795"",""repository_url"":""https://api.github.com/repos/pandas-'"
+893,"b'dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45795/labels{/name}"",""comments_url"":""https://api'"
+894,"b'.github.com/repos/pandas-dev/pandas/issues/45795/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/4'"
+895,"b'5795/events"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45795"",""id"":1122618298,""node_id"":""PR_kwDOAA0YD84yAI_r"",""numbe'"
+896,"b'r"":45795,""title"":""DEP: Protect some ExcelWriter attributes"",""user"":{""login"":""rhshadrach"",""id"":45562402,""node_id"":""MDQ6VXNlcjQ1NT'"
+897,"b'YyNDAy"",""avatar_url"":""https://avatars.githubusercontent.com/u/45562402?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users'"
+898,"b'/rhshadrach"",""html_url"":""https://github.com/rhshadrach"",""followers_url"":""https://api.github.com/users/rhshadrach/followers"",""fol'"
+899,"b'lowing_url"":""https://api.github.com/users/rhshadrach/following{/other_user}"",""gists_url"":""https://api.github.com/users/rhshadrac'"
+900,"b'h/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/rhshadrach/starred{/owner}{/repo}"",""subscriptions_url"":""https://a'"
+901,"b'pi.github.com/users/rhshadrach/subscriptions"",""organizations_url"":""https://api.github.com/users/rhshadrach/orgs"",""repos_url"":""ht'"
+902,"b'tps://api.github.com/users/rhshadrach/repos"",""events_url"":""https://api.github.com/users/rhshadrach/events{/privacy}"",""received_e'"
+903,"b'vents_url"":""https://api.github.com/users/rhshadrach/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":49254273,'"
+904,"b'""node_id"":""MDU6TGFiZWw0OTI1NDI3Mw=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/IO%20Excel"",""name"":""IO Excel"",'"
+905,"b'""color"":""bfe5bf"",""default"":false,""description"":""read_excel, to_excel""},{""id"":87485152,""node_id"":""MDU6TGFiZWw4NzQ4NTE1Mg=="",""url""'"
+906,"b':""https://api.github.com/repos/pandas-dev/pandas/labels/Deprecate"",""name"":""Deprecate"",""color"":""5319e7"",""default"":false,""descript'"
+907,"b'ion"":""Functionality to remove in pandas""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""commen'"
+908,"b'ts"":0,""created_at"":""2022-02-03T03:39:54Z"",""updated_at"":""2022-02-03T03:39:54Z"",""closed_at"":null,""author_association"":""MEMBER"",""ac'"
+909,"b'tive_lock_reason"":null,""draft"":false,""pull_request"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/pulls/45795"",""html_ur'"
+910,"b'l"":""https://github.com/pandas-dev/pandas/pull/45795"",""diff_url"":""https://github.com/pandas-dev/pandas/pull/45795.diff"",""patch_ur'"
+911,"b'l"":""https://github.com/pandas-dev/pandas/pull/45795.patch"",""merged_at"":null},""body"":""- [x] closes #45572 (Replace xxxx with the '"
+912,b'Github issue number)\\r\\n- [x] [Tests added and passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_codeba'
+913,b'se.html#writing-tests) if fixing a bug or adding a new feature\\r\\n- [x] All [code checks passed](https://pandas.pydata.org/panda'
+914,b's-docs/dev/development/contributing_codebase.html#pre-commit).\\r\\n- [x] Added an entry in the latest `doc/source/whatsnew/vX.X.X'
+915,"b"".rst` file if fixing a bug or adding a new feature.\\r\\n\\r\\nBuilt on top of #45794\\r\\n\\r\\nAny attributes we're looking to make pr"""
+916,"b'otected are deprecated here, allowing users to use them until the next major release. Not deprecating any immutable attributes -'"
+917,b' users may find these useful and they do not require any extra care.\\r\\n\\r\\nDocs for ExcelWriter are attached.\\r\\n[excel_writer.'
+918,"b'pdf](https://github.com/pandas-dev/pandas/files/7991646/excel_writer.pdf)\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/'"
+919,"b'pandas-dev/pandas/issues/45795/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""'"
+920,"b'eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45795/timeline"",""performed_via_github_app"":null},'"
+921,"b'{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45794"",""repository_url"":""https://api.github.com/repos/pandas-dev/p'"
+922,"b'andas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45794/labels{/name}"",""comments_url"":""https://api.gith'"
+923,"b'ub.com/repos/pandas-dev/pandas/issues/45794/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45794/'"
+924,"b'events"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45794"",""id"":1122607485,""node_id"":""PR_kwDOAA0YD84yAGz7"",""number"":45'"
+925,"b'794,""title"":""BUG: Error writing an empty DataFrame to an ods file"",""user"":{""login"":""rhshadrach"",""id"":45562402,""node_id"":""MDQ6VXN'"
+926,"b'lcjQ1NTYyNDAy"",""avatar_url"":""https://avatars.githubusercontent.com/u/45562402?v=4"",""gravatar_id"":"""",""url"":""https://api.github.co'"
+927,"b'm/users/rhshadrach"",""html_url"":""https://github.com/rhshadrach"",""followers_url"":""https://api.github.com/users/rhshadrach/follower'"
+928,"b's"",""following_url"":""https://api.github.com/users/rhshadrach/following{/other_user}"",""gists_url"":""https://api.github.com/users/rh'"
+929,"b'shadrach/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/rhshadrach/starred{/owner}{/repo}"",""subscriptions_url"":""ht'"
+930,"b'tps://api.github.com/users/rhshadrach/subscriptions"",""organizations_url"":""https://api.github.com/users/rhshadrach/orgs"",""repos_u'"
+931,"b'rl"":""https://api.github.com/users/rhshadrach/repos"",""events_url"":""https://api.github.com/users/rhshadrach/events{/privacy}"",""rec'"
+932,"b'eived_events_url"":""https://api.github.com/users/rhshadrach/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76'"
+933,"b'811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10'"
+934,"b'c02"",""default"":false,""description"":null},{""id"":49254273,""node_id"":""MDU6TGFiZWw0OTI1NDI3Mw=="",""url"":""https://api.github.com/repos'"
+935,"b'/pandas-dev/pandas/labels/IO%20Excel"",""name"":""IO Excel"",""color"":""bfe5bf"",""default"":false,""description"":""read_excel, to_excel""}],'"
+936,"b'""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/'"
+937,"b'milestones/92"",""html_url"":""https://github.com/pandas-dev/pandas/milestone/92"",""labels_url"":""https://api.github.com/repos/pandas-'"
+938,"b'dev/pandas/milestones/92/labels"",""id"":7530006,""node_id"":""MI_kwDOAA0YD84AcuYW"",""number"":92,""title"":""1.5"",""description"":"""",""creato'"
+939,"b'r"":{""login"":""jreback"",""id"":953992,""node_id"":""MDQ6VXNlcjk1Mzk5Mg=="",""avatar_url"":""https://avatars.githubusercontent.com/u/953992?'"
+940,"b'v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/jreback"",""html_url"":""https://github.com/jreback"",""followers_url"":""http'"
+941,"b's://api.github.com/users/jreback/followers"",""following_url"":""https://api.github.com/users/jreback/following{/other_user}"",""gists'"
+942,"b'_url"":""https://api.github.com/users/jreback/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/jreback/starred{/owner}'"
+943,"b'{/repo}"",""subscriptions_url"":""https://api.github.com/users/jreback/subscriptions"",""organizations_url"":""https://api.github.com/us'"
+944,"b'ers/jreback/orgs"",""repos_url"":""https://api.github.com/users/jreback/repos"",""events_url"":""https://api.github.com/users/jreback/ev'"
+945,"b'ents{/privacy}"",""received_events_url"":""https://api.github.com/users/jreback/received_events"",""type"":""User"",""site_admin"":false},""'"
+946,"b'open_issues"":43,""closed_issues"":250,""state"":""open"",""created_at"":""2021-12-31T21:51:13Z"",""updated_at"":""2022-02-04T16:37:14Z"",""due_'"
+947,"b'on"":""2022-06-30T07:00:00Z"",""closed_at"":null},""comments"":1,""created_at"":""2022-02-03T03:14:44Z"",""updated_at"":""2022-02-03T21:45:32Z'"
+948,"b'"",""closed_at"":null,""author_association"":""MEMBER"",""active_lock_reason"":null,""draft"":false,""pull_request"":{""url"":""https://api.gith'"
+949,"b'ub.com/repos/pandas-dev/pandas/pulls/45794"",""html_url"":""https://github.com/pandas-dev/pandas/pull/45794"",""diff_url"":""https://git'"
+950,"b'hub.com/pandas-dev/pandas/pull/45794.diff"",""patch_url"":""https://github.com/pandas-dev/pandas/pull/45794.patch"",""merged_at"":null}'"
+951,"b',""body"":""- [x] closes #45793 (Replace xxxx with the Github issue number)\\r\\n- [x] [Tests added and passed](https://pandas.pydata'"
+952,b'.org/pandas-docs/dev/development/contributing_codebase.html#writing-tests) if fixing a bug or adding a new feature\\r\\n- [x] All '
+953,b'[code checks passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_codebase.html#pre-commit).\\r\\n- [x] Adde'
+954,"b'd an entry in the latest `doc/source/whatsnew/vX.X.X.rst` file if fixing a bug or adding a new feature.\\r\\n"",""reactions"":{""url"":'"
+955,"b'""https://api.github.com/repos/pandas-dev/pandas/issues/45794/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""conf'"
+956,"b'used"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45794/timeline"",""pe'"
+957,"b'rformed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45793"",""repository_url"":""https://api'"
+958,"b'.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45793/labels{/name}"",""c'"
+959,"b'omments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45793/comments"",""events_url"":""https://api.github.com/repos/p'"
+960,"b'andas-dev/pandas/issues/45793/events"",""html_url"":""https://github.com/pandas-dev/pandas/issues/45793"",""id"":1122602914,""node_id"":""'"
+961,"b'I_kwDOAA0YD85C6Y-i"",""number"":45793,""title"":""BUG: Error writing an empty DataFrame to an ods file"",""user"":{""login"":""rhshadrach"",""'"
+962,"b'id"":45562402,""node_id"":""MDQ6VXNlcjQ1NTYyNDAy"",""avatar_url"":""https://avatars.githubusercontent.com/u/45562402?v=4"",""gravatar_id"":'"
+963,"b'"""",""url"":""https://api.github.com/users/rhshadrach"",""html_url"":""https://github.com/rhshadrach"",""followers_url"":""https://api.githu'"
+964,"b'b.com/users/rhshadrach/followers"",""following_url"":""https://api.github.com/users/rhshadrach/following{/other_user}"",""gists_url"":""'"
+965,"b'https://api.github.com/users/rhshadrach/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/rhshadrach/starred{/owner}{'"
+966,"b'/repo}"",""subscriptions_url"":""https://api.github.com/users/rhshadrach/subscriptions"",""organizations_url"":""https://api.github.com/'"
+967,"b'users/rhshadrach/orgs"",""repos_url"":""https://api.github.com/users/rhshadrach/repos"",""events_url"":""https://api.github.com/users/rh'"
+968,"b'shadrach/events{/privacy}"",""received_events_url"":""https://api.github.com/users/rhshadrach/received_events"",""type"":""User"",""site_a'"
+969,"b'dmin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels'"
+970,"b'/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":49254273,""node_id"":""MDU6TGFiZWw0OTI1NDI3Mw=="",""url'"
+971,"b'"":""https://api.github.com/repos/pandas-dev/pandas/labels/IO%20Excel"",""name"":""IO Excel"",""color"":""bfe5bf"",""default"":false,""descrip'"
+972,"b'tion"":""read_excel, to_excel""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":{""url"":""https://api.gith'"
+973,"b'ub.com/repos/pandas-dev/pandas/milestones/92"",""html_url"":""https://github.com/pandas-dev/pandas/milestone/92"",""labels_url"":""https'"
+974,"b'://api.github.com/repos/pandas-dev/pandas/milestones/92/labels"",""id"":7530006,""node_id"":""MI_kwDOAA0YD84AcuYW"",""number"":92,""title""'"
+975,"b':""1.5"",""description"":"""",""creator"":{""login"":""jreback"",""id"":953992,""node_id"":""MDQ6VXNlcjk1Mzk5Mg=="",""avatar_url"":""https://avatars.'"
+976,"b'githubusercontent.com/u/953992?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/jreback"",""html_url"":""https://github.com'"
+977,"b'/jreback"",""followers_url"":""https://api.github.com/users/jreback/followers"",""following_url"":""https://api.github.com/users/jreback'"
+978,"b'/following{/other_user}"",""gists_url"":""https://api.github.com/users/jreback/gists{/gist_id}"",""starred_url"":""https://api.github.co'"
+979,"b'm/users/jreback/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/jreback/subscriptions"",""organizations_'"
+980,"b'url"":""https://api.github.com/users/jreback/orgs"",""repos_url"":""https://api.github.com/users/jreback/repos"",""events_url"":""https://'"
+981,"b'api.github.com/users/jreback/events{/privacy}"",""received_events_url"":""https://api.github.com/users/jreback/received_events"",""typ'"
+982,"b'e"":""User"",""site_admin"":false},""open_issues"":43,""closed_issues"":250,""state"":""open"",""created_at"":""2021-12-31T21:51:13Z"",""updated_a'"
+983,"b't"":""2022-02-04T16:37:14Z"",""due_on"":""2022-06-30T07:00:00Z"",""closed_at"":null},""comments"":0,""created_at"":""2022-02-03T03:05:51Z"",""up'"
+984,"b'dated_at"":""2022-02-03T21:45:24Z"",""closed_at"":null,""author_association"":""MEMBER"",""active_lock_reason"":null,""body"":""### Pandas ver'"
+985,b'sion checks\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on '
+986,b'the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [X] I have confirmed this bug exists on'
+987,"b"" the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nwith pd.ExcelWriter('test.ods') as writer:\\r\\n    DataFr"""
+988,b'ame().to_excel(writer)\\n```\\n\\n\\n### Issue Description\\n\\nRaises `ValueError: max() arg is an empty sequence`\\n\\n### Expected Be'
+989,b'havior\\n\\nWrite an empty sheet\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nReplace this line with the output of pd.show_versio'
+990,"b'ns()\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45793/reactions"",""total_co'"
+991,"b'unt"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/rep'"
+992,"b'os/pandas-dev/pandas/issues/45793/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pan'"
+993,"b'das/issues/45790"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/p'"
+994,"b'andas-dev/pandas/issues/45790/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45790/comment'"
+995,"b's"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45790/events"",""html_url"":""https://github.com/pandas-dev/p'"
+996,"b'andas/issues/45790"",""id"":1122521511,""node_id"":""I_kwDOAA0YD85C6FGn"",""number"":45790,""title"":""BUG: `df.to_hdf` fails when `Datetime'"
+997,"b'Index` has `freq=pd.DateOffset(years=1)`"",""user"":{""login"":""ChiQiao"",""id"":35905338,""node_id"":""MDQ6VXNlcjM1OTA1MzM4"",""avatar_url"":'"
+998,"b'""https://avatars.githubusercontent.com/u/35905338?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/ChiQiao"",""html_url"":'"
+999,"b'""https://github.com/ChiQiao"",""followers_url"":""https://api.github.com/users/ChiQiao/followers"",""following_url"":""https://api.githu'"
+1000,"b'b.com/users/ChiQiao/following{/other_user}"",""gists_url"":""https://api.github.com/users/ChiQiao/gists{/gist_id}"",""starred_url"":""ht'"
+1001,"b'tps://api.github.com/users/ChiQiao/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/ChiQiao/subscriptio'"
+1002,"b'ns"",""organizations_url"":""https://api.github.com/users/ChiQiao/orgs"",""repos_url"":""https://api.github.com/users/ChiQiao/repos"",""ev'"
+1003,"b'ents_url"":""https://api.github.com/users/ChiQiao/events{/privacy}"",""received_events_url"":""https://api.github.com/users/ChiQiao/re'"
+1004,"b'ceived_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.githu'"
+1005,"b'b.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""no'"
+1006,"b'de_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Tri'"
+1007,"b'age"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",'"
+1008,"b'""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-03T00:21:56Z"",""updated_at"":""20'"
+1009,"b'22-02-03T00:21:56Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n'"
+1010,b'- [X] I have checked that this issue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on the [latest ver'
+1011,b'sion](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the main branc'
+1012,"b'h of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimport pandas as pd\\r\\ndf = pd.DataFrame({\\""a\\"": [0]}, index=pd.Datetim'"
+1013,"b'eIndex([\'2020-01-01\'], freq=pd.DateOffset(years=1)))\\r\\ndf.to_hdf(\\""foo.h5\\"", key=\\""data\\"")\\n```\\n\\n\\n### Issue Description\\n\\nG'"
+1014,"b""et an error: `TypeError: `n` argument must be an integer, got <class 'pandas._libs.tslibs.offsets.DateOffset'>`\\n\\n### Expected """
+1015,b'Behavior\\n\\nSave the dataframe without an error.\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n-----------'
+1016,b'-------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.9.10.final.0\\r\\npython-bits      '
+1017,b': 64\\r\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19043\\r\\nmachine          : AMD64\\r\\nproc'
+1018,"b'essor        : Intel64 Family 6 Model 142 Stepping 10, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL           : None\\r\\nL'"
+1019,b'ANG             : en_US.UTF-8\\r\\nLOCALE           : English_United States.1252\\r\\n\\r\\npandas           : 1.4.0\\r\\nnumpy         '
+1020,b'   : 1.22.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 22.0.2\\r\\nsetuptools       : 59.8.0\\r'
+1021,b'\\nCython           : None\\r\\npytest           : 6.2.5\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc            '
+1022,b': None\\r\\nfeather          : None\\r\\nxlsxwriter       : 3.0.2\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib         : None\\r\\npymysql '
+1023,b'         : 1.0.2\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.3\\r\\nIPython          : 7.30.1\\r\\npandas_datareader: None\\'
+1024,b'r\\nbs4              : 4.10.0\\r\\nbottleneck       : None\\r\\nfastparquet      : 0.8.0\\r\\nfsspec           : 2021.11.1\\r\\ngcsfs    '
+1025,b'        : None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba            : None\\r\\nnumexpr          : 2.7.3\\r\\nodfpy            : None\\r\\n'
+1026,b'openpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npyarrow          : 3.0.0\\r\\npyreadstat       : None\\r\\npyxlsb           :'
+1027,b' None\\r\\ns3fs             : 0.4.2\\r\\nscipy            : 1.7.3\\r\\nsqlalchemy       : 1.4.31\\r\\ntables           : 3.7.0\\r\\ntabula'
+1028,b'te         : 0.8.9\\r\\nxarray           : 0.21.1\\r\\nxlrd             : 2.0.1\\r\\nxlwt             : None\\r\\nzstandard        : Non'
+1029,"b'e\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45790/reactions"",""total_count'"
+1030,"b'"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.com/repos/'"
+1031,"b'pandas-dev/pandas/issues/45790/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-dev/pandas'"
+1032,"b'/issues/45789"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/repos/pand'"
+1033,"b'as-dev/pandas/issues/45789/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45789/comments"",'"
+1034,"b'""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45789/events"",""html_url"":""https://github.com/pandas-dev/pand'"
+1035,"b'as/issues/45789"",""id"":1122520108,""node_id"":""I_kwDOAA0YD85C6Ews"",""number"":45789,""title"":""BUG: Date time slicing fails for `freq=p'"
+1036,"b'd.DateOffset(years=1)`"",""user"":{""login"":""ChiQiao"",""id"":35905338,""node_id"":""MDQ6VXNlcjM1OTA1MzM4"",""avatar_url"":""https://avatars.g'"
+1037,"b'ithubusercontent.com/u/35905338?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/ChiQiao"",""html_url"":""https://github.co'"
+1038,"b'm/ChiQiao"",""followers_url"":""https://api.github.com/users/ChiQiao/followers"",""following_url"":""https://api.github.com/users/ChiQia'"
+1039,"b'o/following{/other_user}"",""gists_url"":""https://api.github.com/users/ChiQiao/gists{/gist_id}"",""starred_url"":""https://api.github.c'"
+1040,"b'om/users/ChiQiao/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/ChiQiao/subscriptions"",""organizations'"
+1041,"b'_url"":""https://api.github.com/users/ChiQiao/orgs"",""repos_url"":""https://api.github.com/users/ChiQiao/repos"",""events_url"":""https:/'"
+1042,"b'/api.github.com/users/ChiQiao/events{/privacy}"",""received_events_url"":""https://api.github.com/users/ChiQiao/received_events"",""ty'"
+1043,"b'pe"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas'"
+1044,"b'-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZW'"
+1045,"b'wxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052'"
+1046,"b'cc"",""default"":false,""description"":""Issue that has not been reviewed by a pandas team member""}],""state"":""open"",""locked"":false,""as'"
+1047,"b'signee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""2022-02-03T00:19:23Z"",""updated_at"":""2022-02-03T00:19:23Z'"
+1048,"b'"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reason"":null,""body"":""### Pandas version checks\\n\\n- [X] I have check'"
+1049,b'ed that this issue has not already been reported.\\n\\n- [X] I have confirmed this bug exists on the [latest version](https://pand'
+1050,b'as.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I have confirmed this bug exists on the main branch of pandas.\\n\\n\\n'
+1051,"b'### Reproducible Example\\n\\n```python\\nimport pandas as pd\\r\\ndf = pd.DataFrame({\\""a\\"": [0]}, index=pd.DatetimeIndex([\'2020-01-0'"
+1052,"b'1\'], freq=pd.DateOffset(years=1)))\\r\\ndf.loc[\\""2020-01-01\\""]\\n```\\n\\n\\n### Issue Description\\n\\nGet an error: `NotImplementedErr'"
+1053,"b'or: Prefix not defined`\\n\\n### Expected Behavior\\n\\nShould return the corresponding row just as `pd.DataFrame({\\""a\\"": [0]}, inde'"
+1054,"b'x=pd.DatetimeIndex([\'2020-01-01\'])).loc[\\""2020-01-01\\""]`. \\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n-'"
+1055,b'-----------------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.9.10.final.0\\r\\npython-'
+1056,b'bits      : 64\\r\\nOS               : Windows\\r\\nOS-release       : 10\\r\\nVersion          : 10.0.19043\\r\\nmachine          : AMD'
+1057,"b'64\\r\\nprocessor        : Intel64 Family 6 Model 142 Stepping 10, GenuineIntel\\r\\nbyteorder        : little\\r\\nLC_ALL           :'"
+1058,b' None\\r\\nLANG             : en_US.UTF-8\\r\\nLOCALE           : English_United States.1252\\r\\n\\r\\npandas           : 1.4.0\\r\\nnump'
+1059,b'y            : 1.22.1\\r\\npytz             : 2021.3\\r\\ndateutil         : 2.8.2\\r\\npip              : 22.0.2\\r\\nsetuptools       '
+1060,b': 59.8.0\\r\\nCython           : None\\r\\npytest           : 6.2.5\\r\\nhypothesis       : None\\r\\nsphinx           : None\\r\\nblosc  '
+1061,b'          : None\\r\\nfeather          : None\\r\\nxlsxwriter       : 3.0.2\\r\\nlxml.etree       : 4.7.1\\r\\nhtml5lib         : None\\r'
+1062,b'\\npymysql          : 1.0.2\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.3\\r\\nIPython          : 7.30.1\\r\\npandas_datarea'
+1063,b'der: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck       : None\\r\\nfastparquet      : 0.8.0\\r\\nfsspec           : 2021.11.1\\r\\'
+1064,b'ngcsfs            : None\\r\\nmatplotlib       : 3.5.1\\r\\nnumba            : None\\r\\nnumexpr          : 2.7.3\\r\\nodfpy            '
+1065,b': None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npyarrow          : 3.0.0\\r\\npyreadstat       : None\\r\\npyxlsb  '
+1066,b'         : None\\r\\ns3fs             : 0.4.2\\r\\nscipy            : 1.7.3\\r\\nsqlalchemy       : 1.4.31\\r\\ntables           : 3.7.0'
+1067,b'\\r\\ntabulate         : 0.8.9\\r\\nxarray           : 0.21.1\\r\\nxlrd             : 2.0.1\\r\\nxlwt             : None\\r\\nzstandard   '
+1068,"b'     : None\\r\\n\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45789/reactions'"
+1069,"b'"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.git'"
+1070,"b'hub.com/repos/pandas-dev/pandas/issues/45789/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pan'"
+1071,"b'das-dev/pandas/issues/45787"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.'"
+1072,"b'com/repos/pandas-dev/pandas/issues/45787/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45'"
+1073,"b'787/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45787/events"",""html_url"":""https://github.com/p'"
+1074,"b'andas-dev/pandas/pull/45787"",""id"":1122482728,""node_id"":""PR_kwDOAA0YD84x_s-2"",""number"":45787,""title"":""BUG: loc raising uncontroll'"
+1075,"b'ed error when more indexers than levels"",""user"":{""login"":""phofl"",""id"":61934744,""node_id"":""MDQ6VXNlcjYxOTM0NzQ0"",""avatar_url"":""ht'"
+1076,"b'tps://avatars.githubusercontent.com/u/61934744?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/phofl"",""html_url"":""http'"
+1077,"b's://github.com/phofl"",""followers_url"":""https://api.github.com/users/phofl/followers"",""following_url"":""https://api.github.com/use'"
+1078,"b'rs/phofl/following{/other_user}"",""gists_url"":""https://api.github.com/users/phofl/gists{/gist_id}"",""starred_url"":""https://api.git'"
+1079,"b'hub.com/users/phofl/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/phofl/subscriptions"",""organization'"
+1080,"b's_url"":""https://api.github.com/users/phofl/orgs"",""repos_url"":""https://api.github.com/users/phofl/repos"",""events_url"":""https://ap'"
+1081,"b'i.github.com/users/phofl/events{/privacy}"",""received_events_url"":""https://api.github.com/users/phofl/received_events"",""type"":""Us'"
+1082,"b'er"",""site_admin"":false},""labels"":[{""id"":2822098,""node_id"":""MDU6TGFiZWwyODIyMDk4"",""url"":""https://api.github.com/repos/pandas-dev/'"
+1083,"b'pandas/labels/Indexing"",""name"":""Indexing"",""color"":""0b02e1"",""default"":false,""description"":""Related to indexing on series/frames, '"
+1084,"b'not to indexes themselves""},{""id"":42670965,""node_id"":""MDU6TGFiZWw0MjY3MDk2NQ=="",""url"":""https://api.github.com/repos/pandas-dev/p'"
+1085,"b'andas/labels/Error%20Reporting"",""name"":""Error Reporting"",""color"":""ffa0ff"",""default"":false,""description"":""Incorrect or improved e'"
+1086,"b'rrors from pandas""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""created_at"":""20'"
+1087,"b'22-02-02T23:14:44Z"",""updated_at"":""2022-02-02T23:14:54Z"",""closed_at"":null,""author_association"":""MEMBER"",""active_lock_reason"":null'"
+1088,"b',""draft"":false,""pull_request"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/pulls/45787"",""html_url"":""https://github.com'"
+1089,"b'/pandas-dev/pandas/pull/45787"",""diff_url"":""https://github.com/pandas-dev/pandas/pull/45787.diff"",""patch_url"":""https://github.com'"
+1090,"b'/pandas-dev/pandas/pull/45787.patch"",""merged_at"":null},""body"":""- [x] closes #45762 (Replace xxxx with the Github issue number)\\r'"
+1091,b'\\n- [x] [Tests added and passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_codebase.html#writing-tests)'
+1092,b' if fixing a bug or adding a new feature\\r\\n- [x] All [code checks passed](https://pandas.pydata.org/pandas-docs/dev/development'
+1093,b'/contributing_codebase.html#pre-commit).\\r\\n- [x] Added an entry in the latest `doc/source/whatsnew/vX.X.X.rst` file if fixing a'
+1094,"b' bug or adding a new feature.\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45787/reactions"",""t'"
+1095,"b'otal_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://api.github.'"
+1096,"b'com/repos/pandas-dev/pandas/issues/45787/timeline"",""performed_via_github_app"":null},{""url"":""https://api.github.com/repos/pandas-'"
+1097,"b'dev/pandas/issues/45785"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_url"":""https://api.github.com/'"
+1098,"b'repos/pandas-dev/pandas/issues/45785/labels{/name}"",""comments_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45785/'"
+1099,"b'comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45785/events"",""html_url"":""https://github.com/panda'"
+1100,"b's-dev/pandas/pull/45785"",""id"":1122424031,""node_id"":""PR_kwDOAA0YD84x_gvd"",""number"":45785,""title"":""Regression: Loc raising when in'"
+1101,"b'dexing mi with one level"",""user"":{""login"":""phofl"",""id"":61934744,""node_id"":""MDQ6VXNlcjYxOTM0NzQ0"",""avatar_url"":""https://avatars.g'"
+1102,"b'ithubusercontent.com/u/61934744?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/users/phofl"",""html_url"":""https://github.com/'"
+1103,"b'phofl"",""followers_url"":""https://api.github.com/users/phofl/followers"",""following_url"":""https://api.github.com/users/phofl/follow'"
+1104,"b'ing{/other_user}"",""gists_url"":""https://api.github.com/users/phofl/gists{/gist_id}"",""starred_url"":""https://api.github.com/users/p'"
+1105,"b'hofl/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/phofl/subscriptions"",""organizations_url"":""https:/'"
+1106,"b'/api.github.com/users/phofl/orgs"",""repos_url"":""https://api.github.com/users/phofl/repos"",""events_url"":""https://api.github.com/us'"
+1107,"b'ers/phofl/events{/privacy}"",""received_events_url"":""https://api.github.com/users/phofl/received_events"",""type"":""User"",""site_admin'"
+1108,"b'"":false},""labels"":[{""id"":2822098,""node_id"":""MDU6TGFiZWwyODIyMDk4"",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/I'"
+1109,"b'ndexing"",""name"":""Indexing"",""color"":""0b02e1"",""default"":false,""description"":""Related to indexing on series/frames, not to indexes '"
+1110,"b'themselves""},{""id"":32815646,""node_id"":""MDU6TGFiZWwzMjgxNTY0Ng=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Re'"
+1111,"b'gression"",""name"":""Regression"",""color"":""e11d21"",""default"":false,""description"":""Functionality that used to work in a prior pandas '"
+1112,"b'version""},{""id"":71268330,""node_id"":""MDU6TGFiZWw3MTI2ODMzMA=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Multi'"
+1113,"b'Index"",""name"":""MultiIndex"",""color"":""207de5"",""default"":false,""description"":null}],""state"":""open"",""locked"":false,""assignee"":null,""'"
+1114,"b'assignees"":[],""milestone"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/milestones/93"",""html_url"":""https://github.com/p'"
+1115,"b'andas-dev/pandas/milestone/93"",""labels_url"":""https://api.github.com/repos/pandas-dev/pandas/milestones/93/labels"",""id"":7593147,""'"
+1116,"b'node_id"":""MI_kwDOAA0YD84Ac9y7"",""number"":93,""title"":""1.4.1"",""description"":""on-merge: backport to 1.4.x"",""creator"":{""login"":""simon'"
+1117,"b'jayhawkins"",""id"":13159005,""node_id"":""MDQ6VXNlcjEzMTU5MDA1"",""avatar_url"":""https://avatars.githubusercontent.com/u/13159005?v=4"",""'"
+1118,"b'gravatar_id"":"""",""url"":""https://api.github.com/users/simonjayhawkins"",""html_url"":""https://github.com/simonjayhawkins"",""followers_'"
+1119,"b'url"":""https://api.github.com/users/simonjayhawkins/followers"",""following_url"":""https://api.github.com/users/simonjayhawkins/foll'"
+1120,"b'owing{/other_user}"",""gists_url"":""https://api.github.com/users/simonjayhawkins/gists{/gist_id}"",""starred_url"":""https://api.github'"
+1121,"b'.com/users/simonjayhawkins/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.github.com/users/simonjayhawkins/subscriptio'"
+1122,"b'ns"",""organizations_url"":""https://api.github.com/users/simonjayhawkins/orgs"",""repos_url"":""https://api.github.com/users/simonjayha'"
+1123,"b'wkins/repos"",""events_url"":""https://api.github.com/users/simonjayhawkins/events{/privacy}"",""received_events_url"":""https://api.git'"
+1124,"b'hub.com/users/simonjayhawkins/received_events"",""type"":""User"",""site_admin"":false},""open_issues"":8,""closed_issues"":91,""state"":""ope'"
+1125,"b'n"",""created_at"":""2022-01-20T14:43:52Z"",""updated_at"":""2022-02-04T16:59:39Z"",""due_on"":""2022-02-12T08:00:00Z"",""closed_at"":null},""co'"
+1126,"b'mments"":0,""created_at"":""2022-02-02T21:51:56Z"",""updated_at"":""2022-02-03T02:01:50Z"",""closed_at"":null,""author_association"":""MEMBER""'"
+1127,"b',""active_lock_reason"":null,""draft"":false,""pull_request"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/pulls/45785"",""htm'"
+1128,"b'l_url"":""https://github.com/pandas-dev/pandas/pull/45785"",""diff_url"":""https://github.com/pandas-dev/pandas/pull/45785.diff"",""patc'"
+1129,"b'h_url"":""https://github.com/pandas-dev/pandas/pull/45785.patch"",""merged_at"":null},""body"":""- [x] closes #45779 (Replace xxxx with '"
+1130,b'the Github issue number)\\r\\n- [x] [Tests added and passed](https://pandas.pydata.org/pandas-docs/dev/development/contributing_co'
+1131,b'debase.html#writing-tests) if fixing a bug or adding a new feature\\r\\n- [x] All [code checks passed](https://pandas.pydata.org/p'
+1132,b'andas-docs/dev/development/contributing_codebase.html#pre-commit).\\r\\n- [x] Added an entry in the latest `doc/source/whatsnew/vX'
+1133,b'.X.X.rst` file if fixing a bug or adding a new feature.\\r\\n\\r\\n@jbrockmendel You moved the error catching logic out of maybe_mi_'
+1134,"b'droplevels. Is this necessary for one of the other code paths?"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pand'"
+1135,"b'as/issues/45785/reactions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timel'"
+1136,"b'ine_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45785/timeline"",""performed_via_github_app"":null},{""url"":""https:/'"
+1137,"b'/api.github.com/repos/pandas-dev/pandas/issues/45783"",""repository_url"":""https://api.github.com/repos/pandas-dev/pandas"",""labels_'"
+1138,"b'url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45783/labels{/name}"",""comments_url"":""https://api.github.com/repos/pa'"
+1139,"b'ndas-dev/pandas/issues/45783/comments"",""events_url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45783/events"",""html_u'"
+1140,"b'rl"":""https://github.com/pandas-dev/pandas/issues/45783"",""id"":1122369407,""node_id"":""I_kwDOAA0YD85C5f9_"",""number"":45783,""title"":""B'"
+1141,"b'UG: Apply with one row unexpected behaviour - It sorts columns"",""user"":{""login"":""dglubokov"",""id"":40633356,""node_id"":""MDQ6VXNlcjQ'"
+1142,"b'wNjMzMzU2"",""avatar_url"":""https://avatars.githubusercontent.com/u/40633356?v=4"",""gravatar_id"":"""",""url"":""https://api.github.com/us'"
+1143,"b'ers/dglubokov"",""html_url"":""https://github.com/dglubokov"",""followers_url"":""https://api.github.com/users/dglubokov/followers"",""fol'"
+1144,"b'lowing_url"":""https://api.github.com/users/dglubokov/following{/other_user}"",""gists_url"":""https://api.github.com/users/dglubokov/'"
+1145,"b'gists{/gist_id}"",""starred_url"":""https://api.github.com/users/dglubokov/starred{/owner}{/repo}"",""subscriptions_url"":""https://api.'"
+1146,"b'github.com/users/dglubokov/subscriptions"",""organizations_url"":""https://api.github.com/users/dglubokov/orgs"",""repos_url"":""https:/'"
+1147,"b'/api.github.com/users/dglubokov/repos"",""events_url"":""https://api.github.com/users/dglubokov/events{/privacy}"",""received_events_u'"
+1148,"b'rl"":""https://api.github.com/users/dglubokov/received_events"",""type"":""User"",""site_admin"":false},""labels"":[{""id"":76811,""node_id"":""'"
+1149,"b'MDU6TGFiZWw3NjgxMQ=="",""url"":""https://api.github.com/repos/pandas-dev/pandas/labels/Bug"",""name"":""Bug"",""color"":""e10c02"",""default"":'"
+1150,"b'false,""description"":null},{""id"":1954720290,""node_id"":""MDU6TGFiZWwxOTU0NzIwMjkw"",""url"":""https://api.github.com/repos/pandas-dev/p'"
+1151,"b'andas/labels/Needs%20Triage"",""name"":""Needs Triage"",""color"":""0052cc"",""default"":false,""description"":""Issue that has not been revie'"
+1152,"b'wed by a pandas team member""}],""state"":""open"",""locked"":false,""assignee"":null,""assignees"":[],""milestone"":null,""comments"":0,""creat'"
+1153,"b'ed_at"":""2022-02-02T20:44:01Z"",""updated_at"":""2022-02-02T20:44:01Z"",""closed_at"":null,""author_association"":""NONE"",""active_lock_reas'"
+1154,"b'on"":null,""body"":""### Pandas version checks\\n\\n- [X] I have checked that this issue has not already been reported.\\n\\n- [X] I hav'"
+1155,b'e confirmed this bug exists on the [latest version](https://pandas.pydata.org/docs/whatsnew/index.html) of pandas.\\n\\n- [ ] I ha'
+1156,b've confirmed this bug exists on the main branch of pandas.\\n\\n\\n### Reproducible Example\\n\\n```python\\nimport numpy as np\\r\\nimp'
+1157,"b""ort pandas as pd\\r\\n\\r\\n\\r\\ndef main():\\r\\n    def test(row):\\r\\n        return {\\r\\n            'Z': str(row['A']),\\r\\n        """
+1158,"b""    'Y': '',\\r\\n            'A': 'GCT',\\r\\n            'B': ''\\r\\n        }\\r\\n    df = pd.DataFrame(np.random.randn(1, 4), colu"""
+1159,"b'mns=[\\""C1\\"", \\""C2\\"", \\""C3\\"", \\""C4\\""])\\r\\n\\r\\n    print(df.apply(test, axis=1, result_type=\'expand\'))\\r\\n\\r\\n\\r\\nmain()\\n```\\n\\n\\'"
+1160,b'n### Issue Description\\n\\n```\\r\\n     A B Y                    Z\\r\\n0  GCT      -1.1154738837496128\\r\\n```\\r\\n\\r\\n\\r\\nYou can se'
+1161,"b""e that columns was sorted. It's very unexpected, I think. I know that I should return list, but for readability I like use dict """
+1162,b'for return\\n\\n### Expected Behavior\\n\\n```\\r\\n     Z                                    Y A     B\\r\\n0  -1.1154738837496128   GC'
+1163,"b""T     \\r\\n```\\r\\n\\r\\nIt's should save columns order.\\n\\n### Installed Versions\\n\\n<details>\\r\\n\\r\\nINSTALLED VERSIONS\\r\\n-------"""
+1164,b'-----------\\r\\ncommit           : bb1f651536508cdfef8550f93ace7849b00046ee\\r\\npython           : 3.9.9.final.0\\r\\npython-bits   '
+1165,b'   : 64\\r\\nOS               : Darwin\\r\\nOS-release       : 21.2.0\\r\\nVersion          : Darwin Kernel Version 21.2.0: Sun Nov 28'
+1166,b' 20:29:10 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T8101\\r\\nmachine          : arm64\\r\\nprocessor        : arm\\r\\nbyteorder '
+1167,b'       : little\\r\\nLC_ALL           : None\\r\\nLANG             : en_GB.UTF-8\\r\\nLOCALE           : en_GB.UTF-8\\r\\n\\r\\npandas    '
+1168,b'       : 1.4.0\\r\\nnumpy            : 1.21.5\\r\\npytz             : 2021.1\\r\\ndateutil         : 2.8.2\\r\\npip              : 21.3.'
+1169,b'1\\r\\nsetuptools       : 59.0.1\\r\\nCython           : None\\r\\npytest           : None\\r\\nhypothesis       : None\\r\\nsphinx       '
+1170,b'    : None\\r\\nblosc            : None\\r\\nfeather          : None\\r\\nxlsxwriter       : None\\r\\nlxml.etree       : 4.6.3\\r\\nhtml5'
+1171,b'lib         : None\\r\\npymysql          : None\\r\\npsycopg2         : None\\r\\njinja2           : 3.0.3\\r\\nIPython          : 7.29.'
+1172,b'0\\r\\npandas_datareader: None\\r\\nbs4              : 4.10.0\\r\\nbottleneck       : None\\r\\nfastparquet      : None\\r\\nfsspec       '
+1173,b'    : 0.9.0\\r\\ngcsfs            : None\\r\\nmatplotlib       : 3.4.3\\r\\nnumba            : None\\r\\nnumexpr          : None\\r\\nodfp'
+1174,b'y            : None\\r\\nopenpyxl         : 3.0.9\\r\\npandas_gbq       : None\\r\\npyarrow          : 6.0.1\\r\\npyreadstat       : Non'
+1175,b'e\\r\\npyxlsb           : None\\r\\ns3fs             : None\\r\\nscipy            : 1.7.3\\r\\nsqlalchemy       : 1.4.28\\r\\ntables      '
+1176,b'     : None\\r\\ntabulate         : 0.8.3\\r\\nxarray           : 0.20.1\\r\\nxlrd             : None\\r\\nxlwt             : None\\r\\nzs'
+1177,"b'tandard        : None\\r\\n\\r\\n</details>\\r\\n"",""reactions"":{""url"":""https://api.github.com/repos/pandas-dev/pandas/issues/45783/rea'"
+1178,"b'ctions"",""total_count"":0,""+1"":0,""-1"":0,""laugh"":0,""hooray"":0,""confused"":0,""heart"":0,""rocket"":0,""eyes"":0},""timeline_url"":""https://a'"
+1179,"b'pi.github.com/repos/pandas-dev/pandas/issues/45783/timeline"",""performed_via_github_app"":null}]'"
